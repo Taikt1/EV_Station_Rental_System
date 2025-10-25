@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>42d9899f-4543-4bc4-960e-0e115e1cde5c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="13.0.1" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EV_StationRentalSystem.Core\EV_StationRentalSystem.Core.csproj" />
+    <ProjectReference Include="..\EV_StationRentalSystem.Insfrastructure\EV_StationRentalSystem.Insfrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

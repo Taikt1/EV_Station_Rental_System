@@ -1,0 +1,94 @@
+[
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "EV_StationRentalSystem.Core.DTO.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerRequest",
+        "Type": "EV_StationRentalSystem.Core.DTO.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
+    "Method": "DebugHeaders",
+    "RelativePath": "api/Test/debug-headers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
+    "Method": "ProtectedEndpoint",
+    "RelativePath": "api/Test/protected",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
+    "Method": "PublicEndpoint",
+    "RelativePath": "api/Test/public",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
+    "Method": "ValidateToken",
+    "RelativePath": "api/Test/validate-token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
+    "Method": "GetDashboard",
+    "RelativePath": "api/User/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
+    "Method": "GetProfile",
+    "RelativePath": "api/User/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\rentalpaymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\rentalpaymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\entities\\rentalorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\rentalorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\entities\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RentalPaymentDbContext.cs",
+              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAUwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:50:03.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentalOrderDetail.cs",
+              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\RentalOrderDetail.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\RentalOrderDetail.cs",
+              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\RentalOrderDetail.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\RentalOrderDetail.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:47:53.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Checkin.cs",
+              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:47:28.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Checkout.cs",
+              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:47:25.552Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
