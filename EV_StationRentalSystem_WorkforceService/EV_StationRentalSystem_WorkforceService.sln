@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.API", "EV_StationRentalSystem.API\EV_StationRentalSystem.API.csproj", "{627A3153-D5D7-4C99-8370-B35FB1688140}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.APIWorkforce", "EV_StationRentalSystem.API\EV_StationRentalSystem.APIWorkforce.csproj", "{627A3153-D5D7-4C99-8370-B35FB1688140}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.Core", "EV_StationRentalSystem.Core\EV_StationRentalSystem.Core.csproj", "{924CB832-0FEF-418C-8181-543B5DD6AC4F}"
 EndProject

@@ -1,10 +1,11 @@
 
 using EV_StationRentalSystem.API.Middleware;
 using EV_StationRentalSystem.Core;
+using EV_StationRentalSystem.Core.HttpClients;
 using EV_StationRentalSystem.Core.Mappers;
+using EV_StationRentalSystem.Core.Policies;
 using EV_StationRentalSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace EV_StationRentalSystem.API
 {
@@ -26,6 +27,24 @@ namespace EV_StationRentalSystem.API
 
             builder.Services.AddAutoMapper(typeof(FleetMappingProfile).Assembly);
 
+            builder.Services.AddTransient<IUsersMicroservicePolicies, UsersMicroservicePolicies>();
+            builder.Services.AddTransient<IPollyPolicies, PollyPolicies>();
+
+
+            builder.Services
+               .AddHttpClient<UserMicroClient>(client =>
+               {
+                   client.BaseAddress = new Uri($"https://{builder.Configuration["UserMicroName"]}:{builder.Configuration["UserMicroPort"]}");
+               }).AddPolicyHandler(
+                   builder.Services.BuildServiceProvider().GetRequiredService<IUsersMicroservicePolicies>().GetCombinedPolicy()
+                );
+
+            builder.Services.AddHttpClient<RentalPaymentMicroClient>(client =>
+            {
+                client.BaseAddress = new Uri($"https://{builder.Configuration["RentalPaymentMicroName"]}:{builder.Configuration["RentalPaymentMicroPort"]}");
+            }).AddPolicyHandler(
+                   builder.Services.BuildServiceProvider().GetRequiredService<IUsersMicroservicePolicies>().GetCombinedPolicy()
+                );
 
             var app = builder.Build();
 

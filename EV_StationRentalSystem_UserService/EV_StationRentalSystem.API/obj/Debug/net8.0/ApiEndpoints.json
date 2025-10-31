@@ -32,49 +32,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
-    "Method": "DebugHeaders",
-    "RelativePath": "api/Test/debug-headers",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
-    "Method": "ProtectedEndpoint",
-    "RelativePath": "api/Test/protected",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
-    "Method": "PublicEndpoint",
-    "RelativePath": "api/Test/public",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EV_StationRentalSystem.API.Controllers.TestController",
-    "Method": "ValidateToken",
-    "RelativePath": "api/Test/validate-token",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
-    "Method": "GetDashboard",
-    "RelativePath": "api/User/dashboard",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/User/info",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

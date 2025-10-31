@@ -15,7 +15,15 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+
+        //Configuration for Microservice URL and Port
+        "UserMicroName": "localhost",
+        "UserMicroPort": "7105",
+        "RentalPaymentMicroName": "localhost",
+        "RentalPaymentMicroPort": "7015",
+        "FleetMicroName": "localhost",
+        "FleetMicroPort": "7042"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7160;http://localhost:5111"

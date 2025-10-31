@@ -9,8 +9,6 @@ namespace EV_StationRentalSystem.API.Controllers
     public class UserController : ControllerBase
     {
 
-
-
         [Authorize] // Protected endpoints
         [HttpGet("profile")]
         public async Task<IActionResult> GetProfile()
@@ -28,16 +26,28 @@ namespace EV_StationRentalSystem.API.Controllers
             });
         }
 
-        [Authorize] 
-        [HttpGet("dashboard")]
-        public async Task<IActionResult> GetDashboard()
+        /// <summary>
+        /// Simple API to get user info - For microservice communication
+        /// </summary>
+        /// <returns>User information with hardcoded data</returns>
+        [HttpGet("info")]
+        public async Task<IActionResult> GetUserInfo()
         {
-            return Ok(new
+            // Hardcoded data for testing
+            var userInfo = new
             {
-                Message = "Welcome to your dashboard!",
-                CurrentUser = User.Identity?.Name,
-                Timestamp = DateTime.Now
-            });
+                UserId = "user001",
+                UserName = "john_doe",
+                Email = "john.doe@example.com",
+                FullName = "John Doe",
+                PhoneNumber = "+1234567890",
+                DateOfBirth = new DateTime(1990, 5, 15),
+                Address = "123 Main St, City, Country",
+                Message = "Hardcoded user data from UserService",
+                Timestamp = DateTime.UtcNow
+            };
+
+            return Ok(userInfo);
         }
     }
 }

@@ -1,11 +1,11 @@
 
 using EV_StationRentalSystem.API.Middleware;
 using EV_StationRentalSystem.Core;
+using EV_StationRentalSystem.Core.HttpClients;
 using EV_StationRentalSystem.Core.Mappers;
+using EV_StationRentalSystem.Core.Policies;
 using EV_StationRentalSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-
 namespace EV_StationRentalSystem.API
 {
     public class Program
@@ -26,7 +26,41 @@ namespace EV_StationRentalSystem.API
 
             builder.Services.AddAutoMapper(typeof(RentalPaymentMappingProfile).Assembly);
 
+
+            //Cors
+            builder.Services.AddCors(options => {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.WithOrigins()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
+
+            builder.Services.AddTransient<IUsersMicroservicePolicies, UsersMicroservicePolicies>();
+            builder.Services.AddTransient<IPollyPolicies, PollyPolicies>();
+
+
+            // Configure CORS to allow requests from specific origins
+            builder.Services
+                .AddHttpClient<UserMicroClient>(client =>
+                {
+                    client.BaseAddress = new Uri($"https://{builder.Configuration["UserMicroName"]}:{builder.Configuration["UserMicroPort"]}");
+                })
+                .AddPolicyHandler(
+                   builder.Services.BuildServiceProvider().GetRequiredService<IUsersMicroservicePolicies>().GetCombinedPolicy()
+                );
+
+            builder.Services.AddHttpClient<FleetMicroClient>(client =>
+            {
+                client.BaseAddress = new Uri($"https://{builder.Configuration["FleetMicroName"]}:{builder.Configuration["FleetMicroPort"]}");
+            }).AddPolicyHandler(
+                   builder.Services.BuildServiceProvider().GetRequiredService<IUsersMicroservicePolicies>().GetCombinedPolicy()
+                );
+
             var app = builder.Build();
+
+            // Apply pending migrations at startup
             using (var scope = app.Services.CreateScope())
             {
                 try
