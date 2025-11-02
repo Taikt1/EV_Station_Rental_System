@@ -1,4 +1,5 @@
-using EV_StationRentalSystem.Core.DTO;
+using EV_StationRentalSystem.Core.DTO.Request;
+using EV_StationRentalSystem.Core.DTO.Response;
 using EV_StationRentalSystem.Core.Entities;
 using EV_StationRentalSystem.Core.RepositoryContracts;
 using EV_StationRentalSystem.Core.ServiceContracts;

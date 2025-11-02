@@ -13,5 +13,7 @@ namespace EV_StationRentalSystem.Core.RepositoryContracts
         Task<List<RentalOrder>> GetByRenterIdAsync(Guid renterId);
         Task<RentalOrder> UpdateAsync(RentalOrder rentalOrder);
         Task<bool> DeleteAsync(Guid rentalId);
+        Task<RentalOrder> UpdateStatusAsync(Guid id, string status);
+        Task<IEnumerable<RentalOrderDetail>> GetOrderDetailsAsync(Guid orderId);
     }
 }

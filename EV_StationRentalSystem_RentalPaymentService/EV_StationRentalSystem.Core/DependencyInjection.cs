@@ -16,6 +16,15 @@ namespace EV_StationRentalSystem.Core
             // Register services
             services.AddScoped<IJwtService, JwtService>();
 
+            services.AddScoped<IRentalOrderService, RentalOrderService>();
+            services.AddScoped<IFeedbackService, FeedbackService>();
+            services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<IAnalyticsService, AnalyticsService>();
+
+            services.AddScoped<IRentalContractService, RentalContractService>();
+            services.AddScoped<ICheckinService, CheckinService>();
+            services.AddScoped<ICheckoutService, CheckoutService>();
+            services.AddScoped<IPenaltyService, PenaltyService>();
 
             return services;
         }

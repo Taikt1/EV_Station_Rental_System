@@ -22,6 +22,11 @@ namespace EV_StationRentalSystem.Infrastructure
             services.AddScoped<IFeedbackRepository, FeedbackRepository>();
             services.AddScoped<IPaymentRepository, PaymentRepository>();
 
+            services.AddScoped<IRentalContractRepository, RentalContractRepository>();
+            services.AddScoped<ICheckinRepository, CheckinRepository>();
+            services.AddScoped<ICheckoutRepository, CheckoutRepository>();
+            services.AddScoped<IPenaltyRepository, PenaltyRepository>();
+
             return services;
         }
     }

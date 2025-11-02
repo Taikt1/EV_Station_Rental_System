@@ -1,4 +1,5 @@
-using EV_StationRentalSystem.Core.DTO;
+using EV_StationRentalSystem.Core.DTO.Request;
+using EV_StationRentalSystem.Core.DTO.Response;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

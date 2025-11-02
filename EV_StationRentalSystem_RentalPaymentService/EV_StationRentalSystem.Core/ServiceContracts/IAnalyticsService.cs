@@ -1,4 +1,4 @@
-using EV_StationRentalSystem.Core.DTO;
+using EV_StationRentalSystem.Core.DTO.Response;
 using System;
 using System.Threading.Tasks;
 

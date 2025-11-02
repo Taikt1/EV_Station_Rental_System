@@ -22,10 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\EV_StationRentalSystem.Core\EV_StationRentalSystem.Core.csproj" />
     <ProjectReference Include="..\EV_StationRentalSystem.Infrastructure\EV_StationRentalSystem.Infrastructure.csproj" />
   </ItemGroup>

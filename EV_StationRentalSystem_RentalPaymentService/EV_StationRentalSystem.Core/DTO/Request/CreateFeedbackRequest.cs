@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace EV_StationRentalSystem.Core.DTO
+namespace EV_StationRentalSystem.Core.DTO.Request
 {
     public class CreateFeedbackRequest
     {

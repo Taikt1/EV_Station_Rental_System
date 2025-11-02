@@ -13,6 +13,7 @@ namespace EV_StationRentalSystem.Infrastructure
         public RentalPaymentDbContext(DbContextOptions<RentalPaymentDbContext> options) : base(options) { }
 
         public DbSet<RentalOrder> RentalOrders { get; set; }
+        public DbSet<RentalOrderDetail> RentalOrderDetails { get; set; }
         public DbSet<RentalContract> RentalContracts { get; set; }
         public DbSet<Checkin> Checkins { get; set; }
         public DbSet<Checkout> Checkouts { get; set; }

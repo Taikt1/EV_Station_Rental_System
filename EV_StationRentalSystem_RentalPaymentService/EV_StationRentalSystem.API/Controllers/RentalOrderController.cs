@@ -1,4 +1,4 @@
-using EV_StationRentalSystem.Core.DTO;
+using EV_StationRentalSystem.Core.DTO.Request;
 using EV_StationRentalSystem.Core.ServiceContracts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -212,6 +212,22 @@ namespace EV_StationRentalSystem.API.Controllers
             {
                 return Ok(new { success = false, message = "Có lỗi xảy ra khi hủy đơn thuê", error = ex.Message });
             }
+        }
+
+        // PUT /api/rental-orders/{id}/status
+        [HttpPut("{id}/status")]
+        public async Task<IActionResult> UpdateStatus(Guid id, [FromBody] UpdateStatusRequest request)
+        {
+            var result = await _rentalOrderService.UpdateStatusAsync(id, request.Status);
+            return CreatedAtAction(nameof(GetRentalOrderById), new { rentalId = result.RentalId }, result);
+        }
+
+        // GET /api/rental-orders/{id}/details
+        [HttpGet("{id}/details")]
+        public async Task<IActionResult> GetDetails(Guid id)
+        {
+            var details = await _rentalOrderService.GetOrderDetailsAsync(id);
+            return Ok(details);
         }
     }
 }

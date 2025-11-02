@@ -1,6 +1,6 @@
 using System;
 
-namespace EV_StationRentalSystem.Core.DTO
+namespace EV_StationRentalSystem.Core.DTO.Response
 {
     public class RentalOrderResponse
     {
@@ -16,5 +16,7 @@ namespace EV_StationRentalSystem.Core.DTO
         public decimal EstimatedCost { get; set; }
         public decimal? ActualCost { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        public int DetailCount { get; set; }
     }
 }

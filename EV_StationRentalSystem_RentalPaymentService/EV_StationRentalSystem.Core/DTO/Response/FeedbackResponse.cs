@@ -1,6 +1,6 @@
 using System;
 
-namespace EV_StationRentalSystem.Core.DTO
+namespace EV_StationRentalSystem.Core.DTO.Response
 {
     public class FeedbackResponse
     {

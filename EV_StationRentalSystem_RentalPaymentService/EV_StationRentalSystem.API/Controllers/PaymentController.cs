@@ -1,4 +1,4 @@
-using EV_StationRentalSystem.Core.DTO;
+using EV_StationRentalSystem.Core.DTO.Request;
 using EV_StationRentalSystem.Core.ServiceContracts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

@@ -12,7 +12,7 @@ namespace EV_StationRentalSystem.Core.Entities
         [Key]
         public Guid PhotoId { get; set; }
 
-        public Guid RentalId { get; set; }
+        //public Guid RentalId { get; set; }
         public Guid? CheckinId { get; set; }
         public Guid? CheckoutId { get; set; }
 
@@ -22,7 +22,7 @@ namespace EV_StationRentalSystem.Core.Entities
         public string? Description { get; set; }
         public DateTime CapturedAt { get; set; } = DateTime.UtcNow;
 
-        public RentalOrder RentalOrder { get; set; }
+        //public RentalOrder RentalOrder { get; set; }
         public Checkin Checkin { get; set; }
         public Checkout Checkout { get; set; }
     }

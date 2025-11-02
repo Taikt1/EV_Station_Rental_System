@@ -1,66 +1,230 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\",
+  "WorkspaceRootPath": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\entities\\photoproof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\photoproof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\httpclients\\usermicroclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\httpclients\\usermicroclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\checkinresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\checkinresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\ev_stationrentalsystem.apirentalpayment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\ev_stationrentalsystem.apirentalpayment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\mappers\\rentalpaymentmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\mappers\\rentalpaymentmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\ev_stationrentalsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\ev_stationrentalsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\rentalpaymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\rentalpaymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\policies\\usersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\policies\\usersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\policies\\iusersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\policies\\iusersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\repositories\\checkinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\repositories\\checkinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\httpclients\\fleetmicroclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\httpclients\\fleetmicroclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\repositories\\rentalorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\repositories\\rentalorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\policies\\pollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\policies\\pollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\policies\\ipollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\policies\\ipollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\services\\checkinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\services\\checkinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\createcheckinrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\createcheckinrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\ev_stationrentalsystem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\ev_stationrentalsystem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\controllers\\penaltycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\penaltycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\services\\penaltyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\services\\penaltyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\entities\\penaltyrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\penaltyrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\servicecontracts\\ipenaltyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\servicecontracts\\ipenaltyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\penaltyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\penaltyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\createpenaltyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\createpenaltyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\services\\checkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\services\\checkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\services\\rentalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\services\\rentalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\repositories\\penaltyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\repositories\\penaltyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\repositorycontracts\\ipenaltyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\repositorycontracts\\ipenaltyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\servicecontracts\\icheckoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\servicecontracts\\icheckoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\updatecheckoutstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\updatecheckoutstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\repositories\\checkoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\repositories\\checkoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\checkoutresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\checkoutresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\createcheckoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\createcheckoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\repositorycontracts\\icheckoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\repositorycontracts\\icheckoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\controllers\\rentalcontractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\rentalcontractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\servicecontracts\\icheckinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\servicecontracts\\icheckinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\updatecheckinstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\updatecheckinstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\repositorycontracts\\icheckinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\repositorycontracts\\icheckinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\pagedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\pagedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\servicecontracts\\irentalcontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\servicecontracts\\irentalcontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\services\\rentalcontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\services\\rentalcontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\updatecontractsignaturerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\updatecontractsignaturerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\createrentalcontractrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\createrentalcontractrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\rentalcontractresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\rentalcontractresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.infrastructure\\repositories\\rentalcontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8876957-78FF-4D08-8B02-BAF10C4F0653}|EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj|solutionrelative:ev_stationrentalsystem.infrastructure\\repositories\\rentalcontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\repositorycontracts\\irentalcontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\repositorycontracts\\irentalcontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\servicecontracts\\irentalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\servicecontracts\\irentalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\controllers\\rentalordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\rentalordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\rentalorderdetailinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\rentalorderdetailinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\rentalorderdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\rentalorderdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\repositorycontracts\\irentalorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\repositorycontracts\\irentalorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\response\\rentalorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\response\\rentalorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\updatestatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\updatestatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\servicecontracts\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\servicecontracts\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\controllers\\userintegrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\userintegrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\createrentalorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\createrentalorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn231_project\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\entities\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\cancelrentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\cancelrentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.core\\dto\\request\\createrentalorderdetailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44917381-7E6A-4632-AB7E-32AD75051A04}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\dto\\request\\createrentalorderdetailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|d:\\prn232_ev_station_rental_system_v2\\ev_stationrentalsystem_rentalpaymentservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BCD14-C311-44CF-BCC4-E8C0667BB9DE}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,188 +234,772 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EV_StationRentalSystem.APIRentalPayment.csproj",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj",
-              "RelativeToolTip": "EV_StationRentalSystem.API\\EV_StationRentalSystem.APIRentalPayment.csproj",
-              "ViewState": "AgIAAAUAAAAAGRh3J1svwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-30T17:23:03.499Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\appsettings.json",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\appsettings.json",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\appsettings.json",
-              "RelativeToolTip": "EV_StationRentalSystem.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-30T17:15:35.848Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FleetMicroClient.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\HttpClients\\FleetMicroClient.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\HttpClients\\FleetMicroClient.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\HttpClients\\FleetMicroClient.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\HttpClients\\FleetMicroClient.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:12:33.665Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsersMicroservicePolicies.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\UsersMicroservicePolicies.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\UsersMicroservicePolicies.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\UsersMicroservicePolicies.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\UsersMicroservicePolicies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:10:00.72Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IPollyPolicies.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\IPollyPolicies.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\IPollyPolicies.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\IPollyPolicies.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\IPollyPolicies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:08:40.368Z"
+              "$type": "Bookmark",
+              "Name": "ST:332826238:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PollyPolicies.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\PollyPolicies.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\PollyPolicies.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\PollyPolicies.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\PollyPolicies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:08:31.739Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUsersMicroservicePolicies.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\IUsersMicroservicePolicies.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\IUsersMicroservicePolicies.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Policies\\IUsersMicroservicePolicies.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\IUsersMicroservicePolicies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:08:10.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EV_StationRentalSystem.Infrastructure.csproj",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj",
-              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-30T05:36:44.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserProfileDto.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\UserProfileDto.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\UserProfileDto.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\UserProfileDto.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\UserProfileDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T05:21:22.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserIntegrationController.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\UserIntegrationController.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\UserIntegrationController.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\UserIntegrationController.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\UserIntegrationController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T05:19:16.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DependencyInjection.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DependencyInjection.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T05:08:00.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "EV_StationRentalSystem.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-30T04:54:35.71Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Program.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Program.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Program.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.API\\Program.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
+              "Title": "PhotoProof.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\PhotoProof.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\PhotoProof.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\PhotoProof.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\PhotoProof.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T04:49:30.663Z",
+              "WhenOpened": "2025-11-02T14:04:47.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RentalPaymentMappingProfile.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Mappers\\RentalPaymentMappingProfile.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Mappers\\RentalPaymentMappingProfile.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Mappers\\RentalPaymentMappingProfile.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Mappers\\RentalPaymentMappingProfile.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwB8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:40:11.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:05:50.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DependencyInjection.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DependencyInjection.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DependencyInjection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:05:45.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CheckinService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\CheckinService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\CheckinService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\CheckinService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\CheckinService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:10:37.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RentalOrderRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\RentalOrderRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\Repositories\\RentalOrderRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\RentalOrderRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\Repositories\\RentalOrderRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA6wFcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:35:00.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CheckinRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\CheckinRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\Repositories\\CheckinRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\CheckinRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\Repositories\\CheckinRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:04:37.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserMicroClient.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\HttpClients\\UserMicroClient.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\HttpClients\\UserMicroClient.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\HttpClients\\UserMicroClient.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\HttpClients\\UserMicroClient.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA1wCYAAAARAAAAAAAAAA==",
+              "Title": "CheckinResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\CheckinResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\CheckinResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\CheckinResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\CheckinResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T04:46:41.183Z"
+              "WhenOpened": "2025-11-02T13:06:00.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Checkin.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\Checkin.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:47:39.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EV_StationRentalSystem.Core.csproj",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
-              "ViewState": "AgIAAAEAAAAAAAAAAABBwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-30T04:45:20.001Z"
+              "Title": "RentalPaymentDbContext.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\RentalPaymentDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:16:23.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\CheckoutController.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:20:27.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPenaltyService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IPenaltyService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\ServiceContracts\\IPenaltyService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IPenaltyService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\ServiceContracts\\IPenaltyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:28:25.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateCheckinRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckinRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckinRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckinRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckinRequest.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:49:08.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PenaltyResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\PenaltyResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\PenaltyResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\PenaltyResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\PenaltyResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:31:38.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PenaltyService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\PenaltyService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\PenaltyService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\PenaltyService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\PenaltyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:33:01.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PenaltyRecord.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\PenaltyRecord.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\PenaltyRecord.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\PenaltyRecord.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\PenaltyRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:33:19.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PenaltyController.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\PenaltyController.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\PenaltyController.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\PenaltyController.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\PenaltyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:34:01.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreatePenaltyRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreatePenaltyRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\CreatePenaltyRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreatePenaltyRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\CreatePenaltyRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:30:25.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CheckoutService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\CheckoutService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\CheckoutService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\CheckoutService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\CheckoutService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:18:52.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PenaltyRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\PenaltyRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\Repositories\\PenaltyRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\PenaltyRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\Repositories\\PenaltyRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:27:38.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPenaltyRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\IPenaltyRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\RepositoryContracts\\IPenaltyRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\IPenaltyRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\RepositoryContracts\\IPenaltyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:27:03.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UpdateCheckoutStatusRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckoutStatusRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckoutStatusRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckoutStatusRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckoutStatusRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:18:04.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CheckOutResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\CheckOutResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\CheckOutResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\CheckOutResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\CheckOutResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:16:04.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ICheckoutService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\ICheckoutService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\ServiceContracts\\ICheckoutService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\ICheckoutService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\ServiceContracts\\ICheckoutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:15:23.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RentalOrderService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\RentalOrderService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\RentalOrderService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\RentalOrderService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\RentalOrderService.cs",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAAwCYBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:36:56.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateCheckoutRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckoutRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckoutRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckoutRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateCheckoutRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:17:27.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CheckoutRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\CheckoutRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\Repositories\\CheckoutRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\CheckoutRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\Repositories\\CheckoutRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:14:20.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ICheckoutRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckoutRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckoutRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckoutRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckoutRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:13:57.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CheckinController.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\CheckinController.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\CheckinController.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\CheckinController.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\CheckinController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:12:53.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UpdateCheckinStatusRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckinStatusRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckinStatusRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckinStatusRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateCheckinStatusRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:09:43.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ICheckinService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\ICheckinService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\ServiceContracts\\ICheckinService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\ICheckinService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\ServiceContracts\\ICheckinService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:05:37.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ICheckinRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckinRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckinRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckinRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\RepositoryContracts\\ICheckinRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:03:20.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RentalContractController.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\RentalContractController.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\RentalContractController.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\RentalContractController.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\RentalContractController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:01:32.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PagedResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\PagedResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\PagedResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\PagedResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\PagedResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:03:51.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UpdateContractSignatureRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateContractSignatureRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateContractSignatureRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateContractSignatureRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateContractSignatureRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:00:25.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CreateRentalContractRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalContractRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalContractRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalContractRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalContractRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:59:16.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RentalContractResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalContractResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalContractResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalContractResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalContractResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:58:33.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RentalContractService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\RentalContractService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\RentalContractService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Services\\RentalContractService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\RentalContractService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:58:07.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IRentalContractService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IRentalContractService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\ServiceContracts\\IRentalContractService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IRentalContractService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\ServiceContracts\\IRentalContractService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:57:32.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RentalContractRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\RentalContractRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Infrastructure\\Repositories\\RentalContractRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Infrastructure\\Repositories\\RentalContractRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\Repositories\\RentalContractRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:56:56.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IRentalContractRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalContractRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalContractRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalContractRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalContractRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:56:28.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RentalOrderDetailInfoResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailInfoResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailInfoResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailInfoResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailInfoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:53:06.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RentalOrderDetailResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderDetailResponse.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:49:53.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IRentalOrderRepository.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalOrderRepository.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalOrderRepository.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalOrderRepository.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\RepositoryContracts\\IRentalOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:25:46.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IRentalOrderService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IRentalOrderService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\ServiceContracts\\IRentalOrderService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IRentalOrderService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\ServiceContracts\\IRentalOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:32:05.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RentalOrderController.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\RentalOrderController.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\RentalOrderController.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Controllers\\RentalOrderController.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\RentalOrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:47:06.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Program.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Program.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:42:44.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-02T11:43:12.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Checkout.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\Checkout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:48:22.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RentalOrderResponse.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderResponse.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderResponse.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderResponse.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Response\\RentalOrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:40:23.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UpdateStatusRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateStatusRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateStatusRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\UpdateStatusRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\UpdateStatusRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:37:18.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\appsettings.json",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\appsettings.json",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.API\\appsettings.json",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-02T12:11:41.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\ServiceContracts\\IPaymentService.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\ServiceContracts\\IPaymentService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\ServiceContracts\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:23:04.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CreateRentalOrderDetailRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderDetailRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderDetailRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderDetailRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderDetailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:36:33.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CreateRentalOrderRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\CreateRentalOrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:35:43.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CancelRentalRequest.cs",
+              "DocumentMoniker": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CancelRentalRequest.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\DTO\\Request\\CancelRentalRequest.cs",
+              "ToolTip": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_RentalPaymentService\\EV_StationRentalSystem.Core\\DTO\\Request\\CancelRentalRequest.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\Request\\CancelRentalRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T11:35:11.986Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 120,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

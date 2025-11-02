@@ -22,9 +22,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="DTO\" />
-	  <Folder Include="RepositoryContracts\" />
-	  <Folder Include="ServiceContracts\" />
 	  <Folder Include="Validators\" />
 	</ItemGroup>
 

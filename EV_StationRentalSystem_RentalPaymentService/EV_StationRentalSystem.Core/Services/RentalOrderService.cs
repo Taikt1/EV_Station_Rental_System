@@ -1,5 +1,6 @@
 using AutoMapper;
-using EV_StationRentalSystem.Core.DTO;
+using EV_StationRentalSystem.Core.DTO.Request;
+using EV_StationRentalSystem.Core.DTO.Response;
 using EV_StationRentalSystem.Core.Entities;
 using EV_StationRentalSystem.Core.RepositoryContracts;
 using EV_StationRentalSystem.Core.ServiceContracts;
@@ -26,8 +27,6 @@ namespace EV_StationRentalSystem.Core.Services
             // Validate and parse GUIDs
             if (!Guid.TryParse(request.RenterId, out var renterId))
                 throw new ArgumentException("Invalid RenterId format");
-            if (!Guid.TryParse(request.VehicleId, out var vehicleId))
-                throw new ArgumentException("Invalid VehicleId format");
             if (!Guid.TryParse(request.BranchStartId, out var branchStartId))
                 throw new ArgumentException("Invalid BranchStartId format");
             if (!Guid.TryParse(request.BranchEndId, out var branchEndId))
@@ -38,14 +37,21 @@ namespace EV_StationRentalSystem.Core.Services
             {
                 RentalId = Guid.NewGuid(),
                 RenterId = renterId,
-                VehicleId = vehicleId,
+                StaffId = request.StaffId,
+                VehicleId = request.Details.Select(d => d.VehicleId).First(),
                 BranchStartId = branchStartId,
                 BranchEndId = branchEndId,
                 StartTime = request.StartTime,
                 EndTime = request.EndTime,
                 Status = "Pending",
                 EstimatedCost = request.EstimatedCost,
-                ActualCost = null
+                ActualCost = null,
+                RentalOrderDetails = request.Details.Select(d => new RentalOrderDetail
+                {
+                    Id = Guid.NewGuid(),
+                    VehicleId = d.VehicleId,
+                    AssignedAt = DateTime.UtcNow
+                }).ToList()
             };
 
             var createdOrder = await _rentalOrderRepository.CreateAsync(rentalOrder);
@@ -193,110 +199,122 @@ namespace EV_StationRentalSystem.Core.Services
             return true;
         }
 
-        public async Task<CheckInResponse> CheckInAsync(Guid rentalId, CheckInRequest request)
+        public async Task<RentalOrderResponse> UpdateStatusAsync(Guid id, string status)
         {
-            var rentalOrder = await _rentalOrderRepository.GetByIdAsync(rentalId);
-            
-            if (rentalOrder == null)
-            {
-                throw new Exception("Rental order not found");
-            }
-
-            // Validate and parse StaffId
-            if (!Guid.TryParse(request.StaffId, out var staffId))
-                throw new ArgumentException("Invalid StaffId format");
-
-            // Create checkin record
-            var checkin = new Checkin
-            {
-                CheckinId = Guid.NewGuid(),
-                RentalOrderDetailId = rentalOrder.RentalOrderDetails?.FirstOrDefault()?.Id ?? Guid.NewGuid(),
-                StaffId = staffId,
-                Datetime = DateTime.UtcNow,
-                OdometerReading = request.OdometerReading,
-                BatteryLevel = request.BatteryLevel,
-                Status = "Confirmed"
-            };
-
-            // Update rental order status
-            rentalOrder.Status = "Active";
-            await _rentalOrderRepository.UpdateAsync(rentalOrder);
-
-            return new CheckInResponse
-            {
-                CheckinId = checkin.CheckinId.ToString(),
-                RentalId = rentalId.ToString(),
-                Datetime = checkin.Datetime,
-                OdometerReading = checkin.OdometerReading,
-                BatteryLevel = checkin.BatteryLevel,
-                Status = checkin.Status,
-                ContractUrl = $"/contracts/{rentalId}",
-                Message = "Check-in successful"
-            };
+            var updated = await _rentalOrderRepository.UpdateStatusAsync(id, status);
+            return _mapper.Map<RentalOrderResponse>(updated);
         }
 
-        public async Task<CheckOutResponse> CheckOutAsync(Guid rentalId, CheckOutRequest request)
+        public async Task<IEnumerable<RentalOrderDetailInfoResponse>> GetOrderDetailsAsync(Guid orderId)
         {
-            var rentalOrder = await _rentalOrderRepository.GetByIdAsync(rentalId);
-            
-            if (rentalOrder == null)
-            {
-                throw new Exception("Rental order not found");
-            }
-
-            // Validate and parse StaffId
-            if (!Guid.TryParse(request.StaffId, out var staffId))
-                throw new ArgumentException("Invalid StaffId format");
-
-            // Create checkout record
-            var checkout = new Checkout
-            {
-                CheckoutId = Guid.NewGuid(),
-                RentalOrderDetailId = rentalOrder.RentalOrderDetails?.FirstOrDefault()?.Id ?? Guid.NewGuid(),
-                StaffId = staffId,
-                Datetime = DateTime.UtcNow,
-                OdometerReading = request.OdometerReading,
-                BatteryLevel = request.BatteryLevel,
-                ExtraFee = 0,
-                Status = "Completed"
-            };
-
-            // Calculate extra fees
-            var additionalFees = new List<AdditionalFeeInfo>();
-            
-            if (request.BatteryLevel < 50)
-            {
-                var fee = (50 - request.BatteryLevel) * 10000; // 10k per % under 50%
-                checkout.ExtraFee += fee;
-                additionalFees.Add(new AdditionalFeeInfo
-                {
-                    Type = "low_battery",
-                    Description = $"Pin dưới 50% ({request.BatteryLevel}%)",
-                    Amount = fee
-                });
-            }
-
-            // Update rental order
-            rentalOrder.Status = "Completed";
-            rentalOrder.EndTime = DateTime.UtcNow;
-            rentalOrder.ActualCost = rentalOrder.EstimatedCost + checkout.ExtraFee;
-            await _rentalOrderRepository.UpdateAsync(rentalOrder);
-
-            return new CheckOutResponse
-            {
-                CheckoutId = checkout.CheckoutId.ToString(),
-                RentalId = rentalId.ToString(),
-                Datetime = checkout.Datetime,
-                OdometerReading = checkout.OdometerReading,
-                BatteryLevel = checkout.BatteryLevel,
-                ExtraFee = checkout.ExtraFee ?? 0,
-                TotalCost = rentalOrder.ActualCost ?? 0,
-                Deposit = 1000000, // Fixed deposit for now
-                RefundAmount = 1000000 - (rentalOrder.ActualCost ?? 0),
-                AdditionalFees = additionalFees,
-                Status = checkout.Status ?? "Completed",
-                Message = "Check-out successful"
-            };
+            var details = await _rentalOrderRepository.GetOrderDetailsAsync(orderId);
+            return _mapper.Map<IEnumerable<RentalOrderDetailInfoResponse>>(details);
         }
+
+        //public async Task<CheckInResponse> CheckInAsync(Guid rentalId, CheckInRequest request)
+        //{
+        //    var rentalOrder = await _rentalOrderRepository.GetByIdAsync(rentalId);
+
+        //    if (rentalOrder == null)
+        //    {
+        //        throw new Exception("Rental order not found");
+        //    }
+
+        //    // Validate and parse StaffId
+        //    if (!Guid.TryParse(request.StaffId, out var staffId))
+        //        throw new ArgumentException("Invalid StaffId format");
+
+        //    // Create checkin record
+        //    var checkin = new Checkin
+        //    {
+        //        CheckinId = Guid.NewGuid(),
+        //        RentalOrderDetailId = rentalOrder.RentalOrderDetails?.FirstOrDefault()?.Id ?? Guid.NewGuid(),
+        //        StaffId = staffId,
+        //        Datetime = DateTime.UtcNow,
+        //        OdometerReading = request.OdometerReading,
+        //        BatteryLevel = request.BatteryLevel,
+        //        Status = "Confirmed"
+        //    };
+
+        //    // Update rental order status
+        //    rentalOrder.Status = "Active";
+        //    await _rentalOrderRepository.UpdateAsync(rentalOrder);
+
+        //    return new CheckInResponse
+        //    {
+        //        CheckinId = checkin.CheckinId.ToString(),
+        //        RentalId = rentalId.ToString(),
+        //        Datetime = checkin.Datetime,
+        //        OdometerReading = checkin.OdometerReading,
+        //        BatteryLevel = checkin.BatteryLevel,
+        //        Status = checkin.Status,
+        //        ContractUrl = $"/contracts/{rentalId}",
+        //        Message = "Check-in successful"
+        //    };
+        //}
+
+        //public async Task<CheckOutResponse> CheckOutAsync(Guid rentalId, CheckOutRequest request)
+        //{
+        //    var rentalOrder = await _rentalOrderRepository.GetByIdAsync(rentalId);
+
+        //    if (rentalOrder == null)
+        //    {
+        //        throw new Exception("Rental order not found");
+        //    }
+
+        //    // Validate and parse StaffId
+        //    if (!Guid.TryParse(request.StaffId, out var staffId))
+        //        throw new ArgumentException("Invalid StaffId format");
+
+        //    // Create checkout record
+        //    var checkout = new Checkout
+        //    {
+        //        CheckoutId = Guid.NewGuid(),
+        //        RentalOrderDetailId = rentalOrder.RentalOrderDetails?.FirstOrDefault()?.Id ?? Guid.NewGuid(),
+        //        StaffId = staffId,
+        //        Datetime = DateTime.UtcNow,
+        //        OdometerReading = request.OdometerReading,
+        //        BatteryLevel = request.BatteryLevel,
+        //        ExtraFee = 0,
+        //        Status = "Completed"
+        //    };
+
+        //    // Calculate extra fees
+        //    var additionalFees = new List<AdditionalFeeInfo>();
+
+        //    if (request.BatteryLevel < 50)
+        //    {
+        //        var fee = (50 - request.BatteryLevel) * 10000; // 10k per % under 50%
+        //        checkout.ExtraFee += fee;
+        //        additionalFees.Add(new AdditionalFeeInfo
+        //        {
+        //            Type = "low_battery",
+        //            Description = $"Pin dưới 50% ({request.BatteryLevel}%)",
+        //            Amount = fee
+        //        });
+        //    }
+
+        //    // Update rental order
+        //    rentalOrder.Status = "Completed";
+        //    rentalOrder.EndTime = DateTime.UtcNow;
+        //    rentalOrder.ActualCost = rentalOrder.EstimatedCost + checkout.ExtraFee;
+        //    await _rentalOrderRepository.UpdateAsync(rentalOrder);
+
+        //    return new CheckOutResponse
+        //    {
+        //        CheckoutId = checkout.CheckoutId.ToString(),
+        //        RentalId = rentalId.ToString(),
+        //        Datetime = checkout.Datetime,
+        //        OdometerReading = checkout.OdometerReading,
+        //        BatteryLevel = checkout.BatteryLevel,
+        //        ExtraFee = checkout.ExtraFee ?? 0,
+        //        TotalCost = rentalOrder.ActualCost ?? 0,
+        //        Deposit = 1000000, // Fixed deposit for now
+        //        RefundAmount = 1000000 - (rentalOrder.ActualCost ?? 0),
+        //        AdditionalFees = additionalFees,
+        //        Status = checkout.Status ?? "Completed",
+        //        Message = "Check-out successful"
+        //    };
+        //}
     }
 }

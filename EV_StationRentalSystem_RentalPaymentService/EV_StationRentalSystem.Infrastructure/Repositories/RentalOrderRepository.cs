@@ -20,7 +20,7 @@ namespace EV_StationRentalSystem.Infrastructure.Repositories
 
         public async Task<RentalOrder> CreateAsync(RentalOrder rentalOrder)
         {
-            await _context.RentalOrders.AddAsync(rentalOrder);
+            _context.RentalOrders.Add(rentalOrder);
             await _context.SaveChangesAsync();
             return rentalOrder;
         }
@@ -68,5 +68,24 @@ namespace EV_StationRentalSystem.Infrastructure.Repositories
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<RentalOrder> UpdateStatusAsync(Guid id, string status)
+        {
+            var order = await _context.RentalOrders.FindAsync(id);
+            if (order != null)
+            {
+                order.Status = status;
+                await _context.SaveChangesAsync();
+            }
+            return order;
+        }
+
+        public async Task<IEnumerable<RentalOrderDetail>> GetOrderDetailsAsync(Guid orderId)
+        {
+            return await _context.RentalOrderDetails
+                .Where(x => x.RentalOrderId == orderId)
+                .ToListAsync();
+        }
+
     }
 }

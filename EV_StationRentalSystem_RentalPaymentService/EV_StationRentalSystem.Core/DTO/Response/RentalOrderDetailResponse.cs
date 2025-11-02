@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace EV_StationRentalSystem.Core.DTO
+namespace EV_StationRentalSystem.Core.DTO.Response
 {
     public class RentalOrderDetailResponse
     {
@@ -16,7 +16,7 @@ namespace EV_StationRentalSystem.Core.DTO
         public string Status { get; set; } = string.Empty;
         public decimal EstimatedCost { get; set; }
         public decimal? ActualCost { get; set; }
-        
+
         // Additional details
         public List<PaymentInfo>? Payments { get; set; }
         public List<FeedbackInfo>? Feedbacks { get; set; }

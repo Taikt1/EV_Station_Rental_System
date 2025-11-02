@@ -5144,23 +5144,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIFleet.csproj",
+      "projectUniqueName": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIFleet.csproj",
       "projectName": "EV_StationRentalSystem.APIFleet",
-      "projectPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIFleet.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\obj\\",
+      "projectPath": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIFleet.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5176,11 +5176,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj": {
-              "projectPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj"
+            "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj": {
+              "projectPath": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj"
             },
-            "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj": {
-              "projectPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj"
+            "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj": {
+              "projectPath": "D:\\PRN232_EV_Station_Rental_System_V2\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj"
             }
           }
         }
@@ -5194,8 +5194,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -5251,7 +5250,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
