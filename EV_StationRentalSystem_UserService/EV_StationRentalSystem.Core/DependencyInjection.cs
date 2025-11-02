@@ -16,6 +16,7 @@ namespace EV_StationRentalSystem.Core
             // Register services
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IJwtService, JwtService>();
+            services.AddScoped<IGoogleAuthService, GoogleAuthService>();
 
             // Register validators
             services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
