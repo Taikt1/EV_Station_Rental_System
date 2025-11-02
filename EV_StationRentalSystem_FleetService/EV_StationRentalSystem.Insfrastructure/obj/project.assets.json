@@ -4162,23 +4162,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Hoa1903\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+      "projectUniqueName": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
       "projectName": "EV_StationRentalSystem.Insfrastructure",
-      "projectPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\obj\\",
+      "projectPath": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+      "packagesPath": "C:\\Users\\Hoa1903\\.nuget\\packages\\",
+      "outputPath": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hoa1903\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4187,15 +4187,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj": {
-              "projectPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj"
+            "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj": {
+              "projectPath": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj"
             }
           }
         }
@@ -4265,7 +4264,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

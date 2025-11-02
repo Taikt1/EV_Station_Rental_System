@@ -1,73 +1,72 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\",
+  "WorkspaceRootPath": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.api\\ev_stationrentalsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\ev_stationrentalsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.insfrastructure\\fleetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.insfrastructure\\fleetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|solutionrelative:ev_stationrentalsystem.insfrastructure\\fleetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\branchdestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\branchdestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\chargingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\chargingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehiclerelocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehiclerelocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\maintenancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\maintenancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehicleavailabilitybybranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehicleavailabilitybybranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehicleschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehicleschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\typevehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\typevehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.insfrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|solutionrelative:ev_stationrentalsystem.insfrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\mappers\\fleetmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\mappers\\fleetmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.insfrastructure\\ev_stationrentalsystem.insfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.insfrastructure\\ev_stationrentalsystem.insfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|solutionrelative:ev_stationrentalsystem.insfrastructure\\ev_stationrentalsystem.insfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\ev_stationrentalsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.api\\ev_stationrentalsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B662A7BC-338C-475F-B631-243B674599C5}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\ev_stationrentalsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\branchdestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\branchdestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\chargingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\chargingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehiclerelocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehiclerelocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\maintenancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\maintenancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehicleavailabilitybybranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehicleavailabilitybybranch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\vehicleschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\vehicleschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\entities\\typevehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\entities\\typevehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.insfrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C90E47C-0A2C-4193-B26A-2F8D378DD2F7}|EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj|solutionrelative:ev_stationrentalsystem.insfrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\mappers\\fleetmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\mappers\\fleetmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\ev_station_rental_system\\ev_stationrentalsystem_fleetservice\\ev_stationrentalsystem.core\\ev_stationrentalsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F8293FDD-BE8C-49F3-BD6D-8868196CED2C}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\ev_stationrentalsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -78,51 +77,156 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 13,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20251021172715_v1.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:27:15.271Z"
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FleetMappingProfile.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:15:26.209Z"
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VehicleAvailabilityByBranch.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwBcAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:13:18.402Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:332826238:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:11:56.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Program.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\Program.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\Program.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwEAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:07:15.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FleetDbContext.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:06:20.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EV_StationRentalSystem.Insfrastructure.csproj",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+              "RelativeToolTip": "EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-21T17:05:39.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VehicleSchedule.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:12:10.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MaintenanceRecord.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA+wBAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:12:25.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\appsettings.json",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\appsettings.json",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\appsettings.json",
+              "RelativeToolTip": "EV_StationRentalSystem.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T17:07:39.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChargingRecord.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:12:47.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "VehicleRelocation.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleRelocation.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleRelocation.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\VehicleRelocation.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleRelocation.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleRelocation.cs",
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\VehicleRelocation.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAADwvxAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -130,163 +234,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChargingRecord.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\ChargingRecord.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:12:47.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MaintenanceRecord.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\MaintenanceRecord.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:12:25.767Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "VehicleSchedule.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\VehicleSchedule.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
+              "Title": "VehicleAvailabilityByBranch.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\VehicleAvailabilityByBranch.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA5wBcAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:12:10.991Z"
+              "WhenOpened": "2025-10-21T17:13:18.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Vehicle.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\Vehicle.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAywCIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "FleetMappingProfile.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Mappers\\FleetMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:11:56.502Z"
+              "WhenOpened": "2025-10-21T17:15:26.209Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "20251021172715_v1.cs",
+              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
+              "RelativeDocumentMoniker": "..\\..\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
+              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
+              "RelativeToolTip": "..\\..\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\Migrations\\20251021172715_v1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:27:15.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "TypeVehicle.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\TypeVehicle.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\TypeVehicle.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\TypeVehicle.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\TypeVehicle.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\TypeVehicle.cs",
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\TypeVehicle.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T17:11:40Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BranchDestination.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\BranchDestination.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\BranchDestination.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Entities\\BranchDestination.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\BranchDestination.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\Entities\\BranchDestination.cs",
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Entities\\BranchDestination.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAA/wB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T17:11:24.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\appsettings.json",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\appsettings.json",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\appsettings.json",
-              "RelativeToolTip": "EV_StationRentalSystem.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T17:07:39.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\Program.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Program.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\Program.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.API\\Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAiwCQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:07:15.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FleetDbContext.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Insfrastructure\\FleetDbContext.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAowCIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:06:20.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\DependencyInjection.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Insfrastructure\\DependencyInjection.cs",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\DependencyInjection.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\DependencyInjection.cs",
               "RelativeToolTip": "EV_StationRentalSystem.Insfrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T17:06:18.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EV_StationRentalSystem.Insfrastructure.csproj",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
-              "RelativeToolTip": "EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T17:05:39.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 16,
               "Title": "EV_StationRentalSystem.Core.csproj",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
               "RelativeToolTip": "EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T17:05:31.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T17:05:31.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EV_StationRentalSystem.API.csproj",
-              "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj",
-              "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj",
               "RelativeToolTip": "EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAABBwBQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T17:04:58.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T17:04:58.286Z"
             }
           ]
         }
