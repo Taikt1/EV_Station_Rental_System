@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EV_StationRentalSystem.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/auth")]
     [ApiController]
     public class AuthController : ControllerBase
     {
