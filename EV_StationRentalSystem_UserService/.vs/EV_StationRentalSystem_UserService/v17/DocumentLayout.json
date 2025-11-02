@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|d:\\prn231_project\\ev_stationrentalsystem_userservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|d:\\prn231_project\\ev_stationrentalsystem_userservice\\ev_stationrentalsystem.api\\middleware\\gatewayauthmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|solutionrelative:ev_stationrentalsystem.api\\middleware\\gatewayauthmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{453D12CB-369C-4E0E-B2D0-6C37D75DB73F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_userservice\\ev_stationrentalsystem.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{453D12CB-369C-4E0E-B2D0-6C37D75DB73F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|d:\\prn231_project\\ev_stationrentalsystem_userservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEFF9C4C-82A2-40C3-81B0-ABB5547FDEC4}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj|d:\\prn231_project\\ev_stationrentalsystem_userservice\\ev_stationrentalsystem.api\\ev_stationrentalsystem.apiuser.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -90,7 +90,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GatewayAuthMiddleware.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.API\\Middleware\\GatewayAuthMiddleware.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Middleware\\GatewayAuthMiddleware.cs",
@@ -98,12 +98,11 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\Middleware\\GatewayAuthMiddleware.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T08:20:31.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T08:20:31.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.Core\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\UserService.cs",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T07:44:17.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T07:44:17.093Z"
             },
             {
               "$type": "Document",
@@ -124,8 +122,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\GoogleAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T07:11:25.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T07:11:25.365Z"
             },
             {
               "$type": "Document",
@@ -185,8 +182,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\EV_StationRentalSystem.APIUser.csproj",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T16:06:17.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T16:06:17.91Z"
             },
             {
               "$type": "Document",
@@ -198,8 +194,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T16:06:16.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T16:06:16.914Z"
             },
             {
               "$type": "Document",
@@ -211,8 +206,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Infrastructure\\EV_StationRentalSystem.Infrastructure.csproj",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T16:06:15.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T16:06:15.185Z"
             },
             {
               "$type": "Document",
@@ -236,8 +230,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAzwAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T16:05:16.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T16:05:16.795Z"
             },
             {
               "$type": "Document",
@@ -249,8 +242,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T15:08:32.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T15:08:32.489Z"
             },
             {
               "$type": "Document",
@@ -260,7 +252,7 @@
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\UserController.cs",
               "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.API\\Controllers\\UserController.cs",
               "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:58:00.834Z",
               "EditorCaption": ""
@@ -299,8 +291,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\JwtService.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAnwBsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T14:51:52.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T14:51:52.353Z"
             },
             {
               "$type": "Document",
@@ -316,16 +307,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.API\\Program.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Program.cs",
               "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.API\\Program.cs",
               "RelativeToolTip": "EV_StationRentalSystem.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwGQAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAwGQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T14:44:57.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T14:44:57.298Z"
             }
           ]
         }
