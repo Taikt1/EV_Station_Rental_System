@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.api\\controllers\\userintegrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\userintegrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.api\\controllers\\userintegrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|solutionrelative:ev_stationrentalsystem.api\\controllers\\userintegrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{924CB832-0FEF-418C-8181-543B5DD6AC4F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.core\\httpclients\\usermicroclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{924CB832-0FEF-418C-8181-543B5DD6AC4F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.core\\httpclients\\fleetmicroclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{924CB832-0FEF-418C-8181-543B5DD6AC4F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\httpclients\\fleetmicroclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{924CB832-0FEF-418C-8181-543B5DD6AC4F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.core\\policies\\usersmicroservicepolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,16 +35,20 @@
       "RelativeMoniker": "D:0:0:{924CB832-0FEF-418C-8181-543B5DD6AC4F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\policies\\ipollypolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.API.csproj|solutionrelative:ev_stationrentalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.api\\ev_stationrentalsystem.apiworkforce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|solutionrelative:ev_stationrentalsystem.api\\ev_stationrentalsystem.apiworkforce.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{924CB832-0FEF-418C-8181-543B5DD6AC4F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.core\\ev_stationrentalsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{924CB832-0FEF-418C-8181-543B5DD6AC4F}|EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj|solutionrelative:ev_stationrentalsystem.core\\ev_stationrentalsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|solutionrelative:ev_stationrentalsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|d:\\prn231_project\\ev_stationrentalsystem_workforceservice\\ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{627A3153-D5D7-4C99-8370-B35FB1688140}|EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj|solutionrelative:ev_stationrentalsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,8 +83,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\HttpClients\\UserMicroClient.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwAkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:52:52.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:52:52.726Z"
             },
             {
               "$type": "Document",
@@ -96,12 +95,11 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\HttpClients\\RentalPaymentMicroClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:52:45.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:52:45.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "UsersMicroservicePolicies.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.Core\\Policies\\UsersMicroservicePolicies.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\UsersMicroservicePolicies.cs",
@@ -109,12 +107,11 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\UsersMicroservicePolicies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:52:20.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:52:20.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "PollyPolicies.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.Core\\Policies\\PollyPolicies.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\PollyPolicies.cs",
@@ -122,12 +119,11 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\PollyPolicies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:52:18.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:52:18.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "IUsersMicroservicePolicies.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.Core\\Policies\\IUsersMicroservicePolicies.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\IUsersMicroservicePolicies.cs",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\IUsersMicroservicePolicies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:52:17.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:52:17.727Z"
             },
             {
               "$type": "Document",
@@ -148,12 +143,11 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\HttpClients\\FleetMicroClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:52:07.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:52:07.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Properties\\launchSettings.json",
@@ -161,25 +155,23 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAIAAAAAAAAAAABRwBkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-30T17:48:51.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:48:51.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EV_StationRentalSystem.API.csproj",
+              "DocumentIndex": 8,
+              "Title": "EV_StationRentalSystem.APIWorkforce.csproj",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj",
               "ToolTip": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj",
               "RelativeToolTip": "EV_StationRentalSystem.API\\EV_StationRentalSystem.APIWorkforce.csproj",
               "ViewState": "AgIAAAcAAAAAAAAAAABBwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-30T17:47:56.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:47:56.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "EV_StationRentalSystem.Core.csproj",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
@@ -187,12 +179,11 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-30T17:47:07.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:47:07.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "IPollyPolicies.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.Core\\Policies\\IPollyPolicies.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Policies\\IPollyPolicies.cs",
@@ -200,12 +191,11 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Policies\\IPollyPolicies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:46:06.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:46:06.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN231_Project\\EV_StationRentalSystem_WorkforceService\\EV_StationRentalSystem.API\\Program.cs",
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Program.cs",
@@ -213,8 +203,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T17:45:35.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T17:45:35.241Z"
             }
           ]
         }
