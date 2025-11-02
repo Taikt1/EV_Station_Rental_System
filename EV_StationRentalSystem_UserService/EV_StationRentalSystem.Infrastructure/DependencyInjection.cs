@@ -41,6 +41,7 @@ namespace EV_StationRentalSystem.Infrastructure
 
             // Register infrastructure services here
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IUserProfileRepository, UserProfileRepository>();
 
             return services;
         }
