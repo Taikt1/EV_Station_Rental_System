@@ -25,6 +25,12 @@ namespace EV_StationRentalSystem.Core.Services
             if (!Guid.TryParse(request.RentalId, out var rentalId))
                 throw new ArgumentException("Invalid RentalId format");
 
+            string paymentStatus = "Pending";
+            if (request.TransactionRef != null && request.TransactionRef.Contains("DEPOSIT"))
+            {
+                paymentStatus = "Paid"; 
+            }
+
             var payment = new Payment
             {
                 PaymentId = Guid.NewGuid(),
@@ -32,7 +38,7 @@ namespace EV_StationRentalSystem.Core.Services
                 Amount = request.Amount,
                 PaymentMethod = request.PaymentMethod,
                 PaymentTime = DateTime.UtcNow,
-                Status = "Pending", 
+                Status = paymentStatus,
                 TransactionRef = request.TransactionRef
             };
 

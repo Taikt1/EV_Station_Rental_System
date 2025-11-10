@@ -25,8 +25,25 @@ namespace EV_StationRentalSystem.APIRentalPayment.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await _checkoutService.CreateCheckoutAsync(request);
-            return CreatedAtAction(nameof(GetCheckoutByOrderId), new { orderId = result.RentalOrderDetailId }, result);
+            try
+            {
+                var result = await _checkoutService.CreateCheckoutAsync(request);
+                return Ok(new
+                {
+                    success = true,
+                    message = "Trả xe thành công",
+                    data = result
+                });
+            }
+            catch (Exception ex)
+            {
+                return Ok(new
+                {
+                    success = false,
+                    message = "Không thể trả xe",
+                    error = ex.Message
+                });
+            }
         }
 
         /// <summary>

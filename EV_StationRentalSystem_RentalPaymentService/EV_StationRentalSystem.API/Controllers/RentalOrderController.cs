@@ -214,12 +214,30 @@ namespace EV_StationRentalSystem.API.Controllers
             }
         }
 
-        // PUT /api/rental-orders/{id}/status
+        // PUT /api/rentals/{id}/status
         [HttpPut("{id}/status")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> UpdateStatus(Guid id, [FromBody] UpdateStatusRequest request)
         {
-            var result = await _rentalOrderService.UpdateStatusAsync(id, request.Status);
-            return CreatedAtAction(nameof(GetRentalOrderById), new { rentalId = result.RentalId }, result);
+            try
+            {
+                var result = await _rentalOrderService.UpdateStatusAsync(id, request.Status);
+                return Ok(new 
+                { 
+                    success = true, 
+                    message = "Cập nhật trạng thái thành công",
+                    data = result 
+                });
+            }
+            catch (Exception ex)
+            {
+                return Ok(new 
+                { 
+                    success = false, 
+                    message = "Không thể cập nhật trạng thái",
+                    error = ex.Message 
+                });
+            }
         }
 
         // GET /api/rental-orders/{id}/details
