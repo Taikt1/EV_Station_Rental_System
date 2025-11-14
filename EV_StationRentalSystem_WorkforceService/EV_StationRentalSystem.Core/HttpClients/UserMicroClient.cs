@@ -11,7 +11,6 @@ namespace EV_StationRentalSystem.Core.HttpClients
 {
     public class UserMicroClient
     {
-
         private readonly HttpClient _httpClient;
 
         public UserMicroClient(HttpClient httpClient)
@@ -19,39 +18,63 @@ namespace EV_StationRentalSystem.Core.HttpClients
             _httpClient = httpClient;
         }
 
-        public async Task<string> GetUserProfileAsync(string token)
-        {
-            var request = new HttpRequestMessage(HttpMethod.Get, "api/user/profile");
-            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-            var response = await _httpClient.SendAsync(request);
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadAsStringAsync();
-        }
-
-        public async Task<UserProfileDto?> GetUserInfoAsync()
+        /// <summary>
+        /// Lấy thông tin profile của một user theo userId
+        /// </summary>
+        public async Task<UserProfileResponse?> GetUserProfileAsync(string userId, string? authToken = null)
         {
             try
             {
-                var response = await _httpClient.GetAsync("api/user/info");
-                response.EnsureSuccessStatusCode();
+                // Thêm token vào header nếu có
+                if (!string.IsNullOrEmpty(authToken))
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization = 
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", authToken);
+                }
 
-                //Cách 1:  Using System.Net.Http.Json for deserialization
-                UserProfileDto? jsonContent = await response.Content.ReadFromJsonAsync<UserProfileDto>();
-                return jsonContent;
+                var response = await _httpClient.GetAsync($"/api/User/profile/{userId}");
+                
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
 
-
-                //Cách 2:  Using System.Text.Json for deserialization
-                //var jsonContent = await response.Content.ReadAsStringAsync();
-                //var options = new JsonSerializerOptions
-                //{
-                //    PropertyNameCaseInsensitive = true
-                //};
-                //return JsonSerializer.Deserialize<UserProfileDto>(jsonContent, options);
+                var result = await response.Content.ReadFromJsonAsync<ApiResponse<UserProfileResponse>>();
+                return result?.Data;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine($"Error calling UserService: {ex.Message}");
                 return null;
             }
+        }
+
+        /// <summary>
+        /// Lấy thông tin nhiều users theo danh sách userId
+        /// </summary>
+        public async Task<Dictionary<string, UserProfileResponse>> GetMultipleUserProfilesAsync(
+            List<string> userIds, string? authToken = null)
+        {
+            var result = new Dictionary<string, UserProfileResponse>();
+
+            foreach (var userId in userIds)
+            {
+                var profile = await GetUserProfileAsync(userId, authToken);
+                if (profile != null)
+                {
+                    result[userId] = profile;
+                }
+            }
+
+            return result;
+        }
+
+        // Helper class để parse response từ UserService
+        private class ApiResponse<T>
+        {
+            public bool Success { get; set; }
+            public string Message { get; set; } = string.Empty;
+            public T? Data { get; set; }
         }
     }
 }
