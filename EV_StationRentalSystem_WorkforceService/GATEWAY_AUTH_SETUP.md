@@ -50,6 +50,7 @@ Response về Gateway → Client
 **Location:** `EV_StationRentalSystem.API/Middleware/GatewayAuthMiddleware.cs`
 
 **Chức năng:**
+
 - Đọc các headers `X-User-*` từ Gateway
 - Tạo `ClaimsPrincipal` với các claims từ headers
 - Set `HttpContext.User` để controller có thể sử dụng
@@ -59,9 +60,10 @@ Response về Gateway → Client
 **Location:** `EV_StationRentalSystem.API/Controllers/WorkdayController.cs`
 
 **Thay đổi:**
+
 - Thêm helper method `ExtractGatewayHeaders()`
 - Cập nhật các GET endpoints để extract và forward Gateway headers:
-  - `GetWorkdays()` 
+  - `GetWorkdays()`
   - `GetWorkdayById()`
   - `GetStaffSchedule()`
   - `GetBranchSchedule()`
@@ -71,6 +73,7 @@ Response về Gateway → Client
 **Location:** `EV_StationRentalSystem.API/Controllers/AssignmentController.cs`
 
 **Thay đổi:**
+
 - Thêm helper method `ExtractGatewayHeaders()`
 - Sẵn sàng cho việc forward Gateway headers khi cần gọi UserService
 
@@ -79,6 +82,7 @@ Response về Gateway → Client
 **Location:** `EV_StationRentalSystem.API/Controllers/ShiftController.cs`
 
 **Thay đổi:**
+
 - Thêm helper method `ExtractGatewayHeaders()`
 - Sẵn sàng cho việc forward Gateway headers khi cần gọi UserService
 

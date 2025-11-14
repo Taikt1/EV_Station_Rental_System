@@ -120,6 +120,180 @@ namespace EV_StationRentalSystem.Core.HttpClients
             return result;
         }
 
+        /// <summary>
+        /// Cập nhật thông tin user (chỉ manager)
+        /// </summary>
+        public async Task<UserProfileResponse?> AdminUpdateUserAsync(
+            string userId,
+            AdminUpdateUserRequest request,
+            string? authToken = null,
+            Dictionary<string, string>? gatewayHeaders = null)
+        {
+            try
+            {
+                _httpClient.DefaultRequestHeaders.Clear();
+
+                if (!string.IsNullOrEmpty(authToken))
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization =
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", authToken);
+                }
+
+                if (gatewayHeaders != null)
+                {
+                    foreach (var header in gatewayHeaders)
+                    {
+                        _httpClient.DefaultRequestHeaders.TryAddWithoutValidation(header.Key, header.Value);
+                    }
+                }
+
+                _logger?.LogInformation("Admin updating user: {UserId}", userId);
+
+                var response = await _httpClient.PutAsJsonAsync($"/api/User/admin/{userId}", request);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    _logger?.LogWarning("Failed to update user {UserId}: {StatusCode}", userId, response.StatusCode);
+                    return null;
+                }
+
+                var result = await response.Content.ReadFromJsonAsync<ApiResponse<UserProfileResponse>>();
+                return result?.Data;
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Error updating user {UserId}", userId);
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Thay đổi role của user (chỉ manager)
+        /// </summary>
+        public async Task<bool> ChangeUserRoleAsync(
+            string userId,
+            string newRole,
+            string? authToken = null,
+            Dictionary<string, string>? gatewayHeaders = null)
+        {
+            try
+            {
+                _httpClient.DefaultRequestHeaders.Clear();
+
+                if (!string.IsNullOrEmpty(authToken))
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization =
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", authToken);
+                }
+
+                if (gatewayHeaders != null)
+                {
+                    foreach (var header in gatewayHeaders)
+                    {
+                        _httpClient.DefaultRequestHeaders.TryAddWithoutValidation(header.Key, header.Value);
+                    }
+                }
+
+                _logger?.LogInformation("Changing role for user {UserId} to {NewRole}", userId, newRole);
+
+                var response = await _httpClient.PutAsJsonAsync($"/api/User/admin/{userId}/role", new { role = newRole });
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Error changing role for user {UserId}", userId);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Khóa/mở khóa user (chỉ manager)
+        /// </summary>
+        public async Task<bool> LockUserAsync(
+            string userId,
+            bool isLocked,
+            string? reason = null,
+            string? authToken = null,
+            Dictionary<string, string>? gatewayHeaders = null)
+        {
+            try
+            {
+                _httpClient.DefaultRequestHeaders.Clear();
+
+                if (!string.IsNullOrEmpty(authToken))
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization =
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", authToken);
+                }
+
+                if (gatewayHeaders != null)
+                {
+                    foreach (var header in gatewayHeaders)
+                    {
+                        _httpClient.DefaultRequestHeaders.TryAddWithoutValidation(header.Key, header.Value);
+                    }
+                }
+
+                var action = isLocked ? "lock" : "unlock";
+                _logger?.LogInformation("{Action} user {UserId}", action, userId);
+
+                var response = await _httpClient.PutAsJsonAsync($"/api/User/admin/{userId}/{action}", new { reason });
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Error locking/unlocking user {UserId}", userId);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Xóa user (chỉ manager)
+        /// </summary>
+        public async Task<bool> DeleteUserAsync(
+            string userId,
+            string? reason = null,
+            string? authToken = null,
+            Dictionary<string, string>? gatewayHeaders = null)
+        {
+            try
+            {
+                _httpClient.DefaultRequestHeaders.Clear();
+
+                if (!string.IsNullOrEmpty(authToken))
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization =
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", authToken);
+                }
+
+                if (gatewayHeaders != null)
+                {
+                    foreach (var header in gatewayHeaders)
+                    {
+                        _httpClient.DefaultRequestHeaders.TryAddWithoutValidation(header.Key, header.Value);
+                    }
+                }
+
+                _logger?.LogInformation("Deleting user {UserId}", userId);
+
+                var request = new HttpRequestMessage(HttpMethod.Delete, $"/api/User/admin/{userId}")
+                {
+                    Content = JsonContent.Create(new { reason })
+                };
+
+                var response = await _httpClient.SendAsync(request);
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Error deleting user {UserId}", userId);
+                return false;
+            }
+        }
+
         // Helper class để parse response từ UserService
         private class ApiResponse<T>
         {

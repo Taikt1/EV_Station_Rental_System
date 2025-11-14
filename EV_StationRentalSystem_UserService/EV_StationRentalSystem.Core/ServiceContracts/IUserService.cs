@@ -21,5 +21,12 @@ namespace EV_StationRentalSystem.Core.ServiceContracts
         Task<string> UploadDocumentAsync(string userId, UploadDocumentRequest request);
 
         Task<bool> VerifyUserAsync(string userId, string status);
+
+        // Admin management methods
+        Task<UserProfileResponse?> AdminUpdateUserAsync(string userId, AdminUpdateUserRequest request);
+        Task<bool> ChangeUserRoleAsync(string userId, string newRole);
+        Task<bool> LockUserAsync(string userId, string? reason);
+        Task<bool> UnlockUserAsync(string userId);
+        Task<bool> DeleteUserAsync(string userId, string? reason);
     }
 }
