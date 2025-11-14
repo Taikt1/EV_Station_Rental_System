@@ -14,12 +14,14 @@ Hệ thống WorkforceService quản lý lịch làm việc của nhân viên v�
 ### ✅ Bước 1: Tạo DTOs (Data Transfer Objects)
 
 **Files đã tạo:**
+
 - `ShiftDTO.cs`: DTO cho ca làm việc
 - `WorkdayDTO.cs`: DTO cho ngày làm việc (có kèm thông tin user)
 - `StaffAssignmentDTO.cs`: DTO cho phân công công việc
 - `UserProfileResponse.cs`: DTO nhận từ UserService
 
 **Đặc điểm:**
+
 - Các Request/Response DTOs riêng biệt
 - Filter request với pagination
 - Bulk operation request
@@ -29,6 +31,7 @@ Hệ thống WorkforceService quản lý lịch làm việc của nhân viên v�
 **File: `UserMicroClient.cs`**
 
 **Chức năng:**
+
 ```csharp
 // Lấy thông tin 1 user
 GetUserProfileAsync(userId, authToken)
@@ -38,6 +41,7 @@ GetMultipleUserProfilesAsync(userIds, authToken)
 ```
 
 **Cách hoạt động:**
+
 - Gọi API UserService: `GET /api/User/profile/{userId}`
 - Truyền JWT token qua Authorization header
 - Parse response và trả về UserProfileResponse
@@ -45,16 +49,19 @@ GetMultipleUserProfilesAsync(userIds, authToken)
 ### ✅ Bước 3-4: Repository Pattern
 
 **Interfaces:**
+
 - `IShiftRepository`
 - `IWorkdayRepository`
 - `IStaffAssignmentRepository`
 
 **Implementations:**
+
 - `ShiftRepository`: CRUD cho shifts
 - `WorkdayRepository`: CRUD + filter + includes
 - `StaffAssignmentRepository`: CRUD + bulk operations
 
 **Đặc điểm:**
+
 - Include navigation properties khi cần
 - Filter methods với nhiều điều kiện
 - Validation methods (Exists, HasShift, etc.)
@@ -67,6 +74,7 @@ GetMultipleUserProfilesAsync(userIds, authToken)
 **Chức năng chính:**
 
 #### Shift Management
+
 - GetShiftByIdAsync
 - GetAllShiftsAsync
 - CreateShiftAsync
@@ -74,6 +82,7 @@ GetMultipleUserProfilesAsync(userIds, authToken)
 - DeleteShiftAsync
 
 #### Workday Management
+
 - GetWorkdayByIdAsync (có call UserService)
 - GetWorkdaysByFilterAsync (có call UserService cho nhiều users)
 - CreateWorkdayAsync (validate duplicate)
@@ -81,6 +90,7 @@ GetMultipleUserProfilesAsync(userIds, authToken)
 - DeleteWorkdayAsync
 
 #### Assignment Management
+
 - GetAssignmentByIdAsync
 - GetAssignmentsByWorkdayAsync
 - CreateAssignmentAsync (validate workday, shift, duplicate)
@@ -89,14 +99,16 @@ GetMultipleUserProfilesAsync(userIds, authToken)
 - CreateBulkAssignmentsAsync (tạo nhiều assignments cho nhiều ngày)
 
 #### Special Queries
+
 - GetStaffScheduleAsync: Lịch làm việc của 1 nhân viên
 - GetBranchScheduleAsync: Lịch làm việc toàn chi nhánh
 
 **Integration với UserService:**
+
 ```csharp
 // Lấy thông tin 1 user
 var userProfile = await _userMicroClient.GetUserProfileAsync(
-    staffId.ToString(), 
+    staffId.ToString(),
     authToken
 );
 workdayDto.StaffInfo = userProfile;
@@ -104,7 +116,7 @@ workdayDto.StaffInfo = userProfile;
 // Lấy thông tin nhiều users
 var staffIds = workdayDtos.Select(w => w.StaffId.ToString()).Distinct().ToList();
 var userProfiles = await _userMicroClient.GetMultipleUserProfilesAsync(
-    staffIds, 
+    staffIds,
     authToken
 );
 ```
@@ -114,6 +126,7 @@ var userProfiles = await _userMicroClient.GetMultipleUserProfilesAsync(
 **File: `WorkforceMappingProfile.cs`**
 
 Mappings:
+
 - Shift ↔ ShiftDTO
 - Workday ↔ WorkdayDTO (with navigation)
 - StaffAssignment ↔ StaffAssignmentDTO
@@ -121,10 +134,12 @@ Mappings:
 ### ✅ Bước 7: Dependency Injection
 
 **Core DI:**
+
 - IWorkforceService → WorkforceService
 - IJwtService → JwtService
 
 **Infrastructure DI:**
+
 - IShiftRepository → ShiftRepository
 - IWorkdayRepository → WorkdayRepository
 - IStaffAssignmentRepository → StaffAssignmentRepository
@@ -132,6 +147,7 @@ Mappings:
 ### ✅ Bước 8: API Controllers
 
 #### **ShiftController**
+
 ```
 GET    /api/Shift              - Lấy tất cả shifts
 GET    /api/Shift/{id}         - Lấy shift theo ID
@@ -141,6 +157,7 @@ DELETE /api/Shift/{id}         - Xóa shift (Manager only)
 ```
 
 #### **WorkdayController**
+
 ```
 GET    /api/Workday                        - Lấy workdays (có filter)
 GET    /api/Workday/{id}                   - Lấy workday theo ID
@@ -152,6 +169,7 @@ GET    /api/Workday/branch/{id}/schedule   - Lịch chi nhánh
 ```
 
 #### **AssignmentController**
+
 ```
 GET    /api/Assignment/{id}           - Lấy assignment theo ID
 GET    /api/Assignment/workday/{id}   - Lấy assignments của workday
@@ -162,6 +180,7 @@ DELETE /api/Assignment/{id}           - Xóa assignment (Manager)
 ```
 
 **Authorization:**
+
 - Manager: Toàn quyền CRUD
 - Staff: Xem lịch của mình, cập nhật trạng thái ca
 - Customer: Không có quyền truy cập
@@ -169,6 +188,7 @@ DELETE /api/Assignment/{id}           - Xóa assignment (Manager)
 ### ✅ Bước 9: JWT Authentication
 
 **Program.cs:**
+
 ```csharp
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => {
@@ -179,6 +199,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 ### ✅ Bước 10: Configuration
 
 **appsettings.json:**
+
 ```json
 {
   "Jwt": {
@@ -195,6 +216,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 ### ✅ Bước 11: API Testing File
 
 **File: `WorkforceAPI.http`**
+
 - Tất cả endpoint examples
 - Workflow examples
 - Sample requests
@@ -220,6 +242,7 @@ dotnet ef database update --project EV_StationRentalSystem.Infrastructure --star
 ### Bước 3: Verify Database
 
 Kiểm tra SQL Server xem các bảng đã được tạo:
+
 - Shifts
 - Workdays
 - StaffAssignments
@@ -333,6 +356,7 @@ Authorization: Bearer eyJhbGc...
 ## Error Handling
 
 Service xử lý các lỗi:
+
 - Workday duplicate: "Nhân viên đã có lịch làm việc trong ngày này"
 - Shift duplicate: "Ca làm việc này đã được phân công"
 - Not found: "Không tìm thấy..."
@@ -394,6 +418,7 @@ Sau khi hoàn thành WorkforceService, bạn có thể:
 ---
 
 **Lưu ý quan trọng:**
+
 - Đảm bảo UserService đang chạy trước khi test WorkforceService
 - JWT Key phải giống nhau giữa các services
 - Connection string SQL Server phải đúng

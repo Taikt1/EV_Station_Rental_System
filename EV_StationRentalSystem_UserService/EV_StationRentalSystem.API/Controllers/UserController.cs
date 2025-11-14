@@ -29,7 +29,7 @@ namespace EV_StationRentalSystem.API.Controllers
 
                 if (currentUserId != userId && userRole != "manager" && userRole != "staff")
                 {
-                    return Forbid();
+                   return Forbid();
                 }
 
                 var profile = await _userService.GetUserProfileAsync(userId);

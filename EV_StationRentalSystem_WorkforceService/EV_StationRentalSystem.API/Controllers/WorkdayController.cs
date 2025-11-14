@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EV_StationRentalSystem.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("Workforce/Workday")]
     [ApiController]
     public class WorkdayController : ControllerBase
     {
@@ -28,8 +28,12 @@ namespace EV_StationRentalSystem.API.Controllers
             try
             {
                 var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-                var workdays = await _workforceService.GetWorkdaysByFilterAsync(filter, token);
-                
+
+                // Extract Gateway headers để forward sang UserService
+                var gatewayHeaders = ExtractGatewayHeaders();
+
+                var workdays = await _workforceService.GetWorkdaysByFilterAsync(filter, token, gatewayHeaders);
+
                 return Ok(new
                 {
                     success = true,
@@ -64,8 +68,10 @@ namespace EV_StationRentalSystem.API.Controllers
             try
             {
                 var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-                var workday = await _workforceService.GetWorkdayByIdAsync(workdayId, token);
-                
+                var gatewayHeaders = ExtractGatewayHeaders();
+
+                var workday = await _workforceService.GetWorkdayByIdAsync(workdayId, token, gatewayHeaders);
+
                 if (workday == null)
                 {
                     return NotFound(new
@@ -213,15 +219,17 @@ namespace EV_StationRentalSystem.API.Controllers
         //[Authorize]
         [HttpGet("staff/{staffId}/schedule")]
         public async Task<IActionResult> GetStaffSchedule(
-            Guid staffId, 
-            [FromQuery] DateTime startDate, 
+            Guid staffId,
+            [FromQuery] DateTime startDate,
             [FromQuery] DateTime endDate)
         {
             try
             {
                 var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-                var schedule = await _workforceService.GetStaffScheduleAsync(staffId, startDate, endDate, token);
-                
+                var gatewayHeaders = ExtractGatewayHeaders();
+
+                var schedule = await _workforceService.GetStaffScheduleAsync(staffId, startDate, endDate, token, gatewayHeaders);
+
                 return Ok(new
                 {
                     success = true,
@@ -246,15 +254,17 @@ namespace EV_StationRentalSystem.API.Controllers
         //[Authorize(Roles = "manager,staff")]
         [HttpGet("branch/{branchId}/schedule")]
         public async Task<IActionResult> GetBranchSchedule(
-            Guid branchId, 
-            [FromQuery] DateTime startDate, 
+            Guid branchId,
+            [FromQuery] DateTime startDate,
             [FromQuery] DateTime endDate)
         {
             try
             {
                 var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-                var schedule = await _workforceService.GetBranchScheduleAsync(branchId, startDate, endDate, token);
-                
+                var gatewayHeaders = ExtractGatewayHeaders();
+
+                var schedule = await _workforceService.GetBranchScheduleAsync(branchId, startDate, endDate, token, gatewayHeaders);
+
                 return Ok(new
                 {
                     success = true,
@@ -271,6 +281,32 @@ namespace EV_StationRentalSystem.API.Controllers
                     data = (object?)null
                 });
             }
+        }
+
+        /// <summary>
+        /// Helper method để extract Gateway headers từ request
+        /// </summary>
+        private Dictionary<string, string>? ExtractGatewayHeaders()
+        {
+            var headers = new Dictionary<string, string>();
+
+            // Extract các headers từ Gateway
+            var userId = Request.Headers["X-User-Id"].FirstOrDefault();
+            var userEmail = Request.Headers["X-User-Email"].FirstOrDefault();
+            var userRole = Request.Headers["X-User-Role"].FirstOrDefault();
+            var userName = Request.Headers["X-User-Name"].FirstOrDefault();
+
+            if (!string.IsNullOrEmpty(userId))
+            {
+                headers["X-User-Id"] = userId;
+                if (!string.IsNullOrEmpty(userEmail)) headers["X-User-Email"] = userEmail;
+                if (!string.IsNullOrEmpty(userRole)) headers["X-User-Role"] = userRole;
+                if (!string.IsNullOrEmpty(userName)) headers["X-User-Name"] = userName;
+
+                return headers;
+            }
+
+            return null;
         }
     }
 }

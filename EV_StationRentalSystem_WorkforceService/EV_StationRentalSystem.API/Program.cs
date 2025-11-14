@@ -24,7 +24,14 @@ namespace EV_StationRentalSystem.API
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    // Tránh circular reference khi serialize JSON
+                    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+                    // Ignore null values để giảm kích thước response
+                    options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+                });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -114,6 +121,9 @@ namespace EV_StationRentalSystem.API
             app.UseRouting();
 
             app.UseAuthentication();
+
+            // Add Gateway Auth Middleware to read headers from Gateway
+            app.UseGatewayAuth();
 
             app.UseAuthorization();
 

@@ -9,10 +9,9 @@ namespace EV_StationRentalSystem.Core.DTO
         public Guid ShiftId { get; set; }
         public string? Task { get; set; }
         public string Status { get; set; } = "Assigned";
-        
-        // Navigation info
+
+        // Navigation info - CHỈ bao gồm Shift, KHÔNG bao gồm Workday để tránh circular reference
         public ShiftDTO? Shift { get; set; }
-        public WorkdayDTO? Workday { get; set; }
     }
 
     public class CreateAssignmentRequest

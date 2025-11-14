@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EV_StationRentalSystem.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("Workforce/Shift")]
     [ApiController]
     public class ShiftController : ControllerBase
     {
@@ -81,6 +81,32 @@ namespace EV_StationRentalSystem.API.Controllers
                     data = (object?)null
                 });
             }
+        }
+
+        /// <summary>
+        /// Helper method để extract Gateway headers
+        /// </summary>
+        private Dictionary<string, string>? ExtractGatewayHeaders()
+        {
+            var headers = new Dictionary<string, string>();
+
+            // Extract các headers từ Gateway
+            var userId = Request.Headers["X-User-Id"].FirstOrDefault();
+            var userEmail = Request.Headers["X-User-Email"].FirstOrDefault();
+            var userRole = Request.Headers["X-User-Role"].FirstOrDefault();
+            var userName = Request.Headers["X-User-Name"].FirstOrDefault();
+
+            if (!string.IsNullOrEmpty(userId))
+            {
+                headers["X-User-Id"] = userId;
+                if (!string.IsNullOrEmpty(userEmail)) headers["X-User-Email"] = userEmail;
+                if (!string.IsNullOrEmpty(userRole)) headers["X-User-Role"] = userRole;
+                if (!string.IsNullOrEmpty(userName)) headers["X-User-Name"] = userName;
+
+                return headers;
+            }
+
+            return null;
         }
 
         /// <summary>

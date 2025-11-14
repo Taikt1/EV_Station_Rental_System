@@ -13,14 +13,15 @@ namespace EV_StationRentalSystem.Core.Mappers
             CreateMap<Shift, ShiftDTO>();
             CreateMap<CreateShiftRequest, Shift>();
 
-            // Workday mappings
+            // Workday mappings - KHÔNG map Workday trong Assignment để tránh circular reference
             CreateMap<Workday, WorkdayDTO>()
                 .ForMember(dest => dest.Assignments, opt => opt.MapFrom(src => src.StaffAssignments))
                 .ForMember(dest => dest.StaffInfo, opt => opt.Ignore());
             CreateMap<CreateWorkdayRequest, Workday>();
 
-            // StaffAssignment mappings
-            CreateMap<StaffAssignment, StaffAssignmentDTO>();
+            // StaffAssignment mappings - CHỈ map Shift, KHÔNG map Workday
+            CreateMap<StaffAssignment, StaffAssignmentDTO>()
+                .ForMember(dest => dest.Shift, opt => opt.MapFrom(src => src.Shift));
             CreateMap<CreateAssignmentRequest, StaffAssignment>();
         }
     }

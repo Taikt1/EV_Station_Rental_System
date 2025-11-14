@@ -10,7 +10,7 @@ namespace EV_StationRentalSystem.Core.DTO
         public Guid BranchId { get; set; }
         public DateTime Date { get; set; }
         public List<StaffAssignmentDTO> Assignments { get; set; } = new();
-        
+
         // Thông tin từ UserService
         public UserProfileResponse? StaffInfo { get; set; }
     }

@@ -86,20 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.Core\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\UserService.cs",
-              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.Core\\Services\\UserService.cs",
-              "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T07:44:17.093Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
@@ -124,6 +112,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:58:00.834Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.Core\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "EV_StationRentalSystem.Core\\Services\\UserService.cs",
+              "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.Core\\Services\\UserService.cs",
+              "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T07:44:17.093Z"
             },
             {
               "$type": "Document",

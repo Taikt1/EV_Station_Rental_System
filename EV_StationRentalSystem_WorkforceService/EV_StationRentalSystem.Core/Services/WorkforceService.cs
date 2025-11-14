@@ -88,7 +88,7 @@ namespace EV_StationRentalSystem.Core.Services
 
         #region Workday Management
 
-        public async Task<WorkdayDTO?> GetWorkdayByIdAsync(Guid workdayId, string? authToken = null)
+        public async Task<WorkdayDTO?> GetWorkdayByIdAsync(Guid workdayId, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null)
         {
             var workday = await _workdayRepository.GetByIdAsync(workdayId, includeAssignments: true);
             if (workday == null) return null;
@@ -96,16 +96,19 @@ namespace EV_StationRentalSystem.Core.Services
             var workdayDto = _mapper.Map<WorkdayDTO>(workday);
 
             // Lấy thông tin nhân viên từ UserService
-            if (authToken != null)
+            if (authToken != null || gatewayHeaders != null)
             {
-                var userProfile = await _userMicroClient.GetUserProfileAsync(workday.StaffId.ToString(), authToken);
+                var userProfile = await _userMicroClient.GetUserProfileAsync(
+                    workday.StaffId.ToString(),
+                    authToken,
+                    gatewayHeaders);
                 workdayDto.StaffInfo = userProfile;
             }
 
             return workdayDto;
         }
 
-        public async Task<List<WorkdayDTO>> GetWorkdaysByFilterAsync(WorkdayFilterRequest filter, string? authToken = null)
+        public async Task<List<WorkdayDTO>> GetWorkdaysByFilterAsync(WorkdayFilterRequest filter, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null)
         {
             var workdays = await _workdayRepository.GetFilteredAsync(
                 filter.StaffId,
@@ -118,10 +121,13 @@ namespace EV_StationRentalSystem.Core.Services
             var workdayDtos = _mapper.Map<List<WorkdayDTO>>(workdays);
 
             // Lấy thông tin nhân viên cho tất cả workdays
-            if (authToken != null && workdayDtos.Any())
+            if ((authToken != null || gatewayHeaders != null) && workdayDtos.Any())
             {
                 var staffIds = workdayDtos.Select(w => w.StaffId.ToString()).Distinct().ToList();
-                var userProfiles = await _userMicroClient.GetMultipleUserProfilesAsync(staffIds, authToken);
+                var userProfiles = await _userMicroClient.GetMultipleUserProfilesAsync(
+                    staffIds,
+                    authToken,
+                    gatewayHeaders);
 
                 foreach (var workdayDto in workdayDtos)
                 {
@@ -272,9 +278,9 @@ namespace EV_StationRentalSystem.Core.Services
             {
                 // Tạo hoặc lấy workday cho ngày này
                 var workdays = await _workdayRepository.GetFilteredAsync(
-                    request.StaffId, 
-                    request.BranchId, 
-                    currentDate, 
+                    request.StaffId,
+                    request.BranchId,
+                    currentDate,
                     currentDate
                 );
 
@@ -329,7 +335,7 @@ namespace EV_StationRentalSystem.Core.Services
 
         #region Special Queries
 
-        public async Task<List<WorkdayDTO>> GetStaffScheduleAsync(Guid staffId, DateTime startDate, DateTime endDate, string? authToken = null)
+        public async Task<List<WorkdayDTO>> GetStaffScheduleAsync(Guid staffId, DateTime startDate, DateTime endDate, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null)
         {
             var workdays = await _workdayRepository.GetFilteredAsync(
                 staffId,
@@ -342,9 +348,12 @@ namespace EV_StationRentalSystem.Core.Services
             var workdayDtos = _mapper.Map<List<WorkdayDTO>>(workdays);
 
             // Lấy thông tin nhân viên
-            if (authToken != null)
+            if (authToken != null || gatewayHeaders != null)
             {
-                var userProfile = await _userMicroClient.GetUserProfileAsync(staffId.ToString(), authToken);
+                var userProfile = await _userMicroClient.GetUserProfileAsync(
+                    staffId.ToString(),
+                    authToken,
+                    gatewayHeaders);
                 foreach (var workdayDto in workdayDtos)
                 {
                     workdayDto.StaffInfo = userProfile;
@@ -354,7 +363,7 @@ namespace EV_StationRentalSystem.Core.Services
             return workdayDtos;
         }
 
-        public async Task<List<WorkdayDTO>> GetBranchScheduleAsync(Guid branchId, DateTime startDate, DateTime endDate, string? authToken = null)
+        public async Task<List<WorkdayDTO>> GetBranchScheduleAsync(Guid branchId, DateTime startDate, DateTime endDate, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null)
         {
             var workdays = await _workdayRepository.GetFilteredAsync(
                 null,
@@ -367,10 +376,13 @@ namespace EV_StationRentalSystem.Core.Services
             var workdayDtos = _mapper.Map<List<WorkdayDTO>>(workdays);
 
             // Lấy thông tin tất cả nhân viên
-            if (authToken != null && workdayDtos.Any())
+            if ((authToken != null || gatewayHeaders != null) && workdayDtos.Any())
             {
                 var staffIds = workdayDtos.Select(w => w.StaffId.ToString()).Distinct().ToList();
-                var userProfiles = await _userMicroClient.GetMultipleUserProfilesAsync(staffIds, authToken);
+                var userProfiles = await _userMicroClient.GetMultipleUserProfilesAsync(
+                    staffIds,
+                    authToken,
+                    gatewayHeaders);
 
                 foreach (var workdayDto in workdayDtos)
                 {

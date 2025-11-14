@@ -26,6 +26,7 @@ WorkforceService
 ## ✨ Các Tính Năng Đã Triển Khai
 
 ### 1. **Shift Management (Quản lý ca làm việc)**
+
 - ✅ Tạo ca làm việc (Morning/Afternoon/Night)
 - ✅ Xem danh sách ca
 - ✅ Cập nhật thông tin ca
@@ -33,6 +34,7 @@ WorkforceService
 - 🔒 **Chỉ Manager**
 
 ### 2. **Workday Management (Quản lý ngày làm việc)**
+
 - ✅ Tạo ngày làm việc cho nhân viên
 - ✅ Xem lịch làm việc (có filter)
 - ✅ Cập nhật thông tin ngày làm việc
@@ -42,6 +44,7 @@ WorkforceService
 - 🔒 **Manager: CRUD, Staff: Chỉ xem**
 
 ### 3. **Assignment Management (Quản lý phân công)**
+
 - ✅ Phân công ca làm việc cho nhân viên
 - ✅ Phân công hàng loạt (nhiều ngày, nhiều ca)
 - ✅ Cập nhật trạng thái ca (Assigned/Completed/Absent)
@@ -49,6 +52,7 @@ WorkforceService
 - 🔒 **Manager: CRUD, Staff: Update status**
 
 ### 4. **Integration với UserService**
+
 - ✅ HttpClient để gọi UserService API
 - ✅ Lấy thông tin nhân viên khi xem lịch
 - ✅ Lấy thông tin nhiều nhân viên (batch)
@@ -57,6 +61,7 @@ WorkforceService
 ## 📁 Files Đã Tạo/Cập Nhật
 
 ### DTOs (8 files)
+
 ```
 ✅ ShiftDTO.cs - DTO cho ca làm việc
 ✅ WorkdayDTO.cs - DTO cho ngày làm việc
@@ -65,6 +70,7 @@ WorkforceService
 ```
 
 ### Repositories (6 files)
+
 ```
 ✅ IShiftRepository.cs
 ✅ IWorkdayRepository.cs
@@ -75,12 +81,14 @@ WorkforceService
 ```
 
 ### Services (2 files)
+
 ```
 ✅ IWorkforceService.cs
 ✅ WorkforceService.cs
 ```
 
 ### Controllers (3 files)
+
 ```
 ✅ ShiftController.cs
 ✅ WorkdayController.cs
@@ -88,6 +96,7 @@ WorkforceService
 ```
 
 ### Configuration
+
 ```
 ✅ UserMicroClient.cs - Updated với GetUserProfileAsync
 ✅ WorkforceMappingProfile.cs - AutoMapper config
@@ -99,12 +108,14 @@ WorkforceService
 ```
 
 ### Documentation & Testing
+
 ```
 ✅ HUONG_DAN_API.md - Hướng dẫn chi tiết
 ✅ WorkforceAPI.http - API test file
 ```
 
 ### Database
+
 ```
 ✅ Migration: 20251104072115_InitialCreate
 ✅ Database: WorkforceDb (SQL Server)
@@ -113,43 +124,48 @@ WorkforceService
 ## 🎯 API Endpoints
 
 ### Shift APIs
-| Method | Endpoint | Auth | Description |
-|--------|----------|------|-------------|
-| GET | `/api/Shift` | - | Lấy tất cả ca |
-| GET | `/api/Shift/{id}` | - | Lấy ca theo ID |
-| POST | `/api/Shift` | Manager | Tạo ca mới |
-| PUT | `/api/Shift/{id}` | Manager | Cập nhật ca |
-| DELETE | `/api/Shift/{id}` | Manager | Xóa ca |
+
+| Method | Endpoint          | Auth    | Description    |
+| ------ | ----------------- | ------- | -------------- |
+| GET    | `/api/Shift`      | -       | Lấy tất cả ca  |
+| GET    | `/api/Shift/{id}` | -       | Lấy ca theo ID |
+| POST   | `/api/Shift`      | Manager | Tạo ca mới     |
+| PUT    | `/api/Shift/{id}` | Manager | Cập nhật ca    |
+| DELETE | `/api/Shift/{id}` | Manager | Xóa ca         |
 
 ### Workday APIs
-| Method | Endpoint | Auth | Description |
-|--------|----------|------|-------------|
-| GET | `/api/Workday` | Auth | Lấy danh sách (filter) |
-| GET | `/api/Workday/{id}` | Auth | Lấy theo ID |
-| POST | `/api/Workday` | Manager | Tạo ngày làm việc |
-| PUT | `/api/Workday/{id}` | Manager | Cập nhật |
-| DELETE | `/api/Workday/{id}` | Manager | Xóa |
-| GET | `/api/Workday/staff/{id}/schedule` | Auth | Lịch nhân viên |
-| GET | `/api/Workday/branch/{id}/schedule` | Manager/Staff | Lịch chi nhánh |
+
+| Method | Endpoint                            | Auth          | Description            |
+| ------ | ----------------------------------- | ------------- | ---------------------- |
+| GET    | `/api/Workday`                      | Auth          | Lấy danh sách (filter) |
+| GET    | `/api/Workday/{id}`                 | Auth          | Lấy theo ID            |
+| POST   | `/api/Workday`                      | Manager       | Tạo ngày làm việc      |
+| PUT    | `/api/Workday/{id}`                 | Manager       | Cập nhật               |
+| DELETE | `/api/Workday/{id}`                 | Manager       | Xóa                    |
+| GET    | `/api/Workday/staff/{id}/schedule`  | Auth          | Lịch nhân viên         |
+| GET    | `/api/Workday/branch/{id}/schedule` | Manager/Staff | Lịch chi nhánh         |
 
 ### Assignment APIs
-| Method | Endpoint | Auth | Description |
-|--------|----------|------|-------------|
-| GET | `/api/Assignment/{id}` | Auth | Lấy theo ID |
-| GET | `/api/Assignment/workday/{id}` | Auth | Lấy theo workday |
-| POST | `/api/Assignment` | Manager | Tạo phân công |
-| POST | `/api/Assignment/bulk` | Manager | Tạo hàng loạt |
-| PUT | `/api/Assignment/{id}` | Manager/Staff | Cập nhật |
-| DELETE | `/api/Assignment/{id}` | Manager | Xóa |
+
+| Method | Endpoint                       | Auth          | Description      |
+| ------ | ------------------------------ | ------------- | ---------------- |
+| GET    | `/api/Assignment/{id}`         | Auth          | Lấy theo ID      |
+| GET    | `/api/Assignment/workday/{id}` | Auth          | Lấy theo workday |
+| POST   | `/api/Assignment`              | Manager       | Tạo phân công    |
+| POST   | `/api/Assignment/bulk`         | Manager       | Tạo hàng loạt    |
+| PUT    | `/api/Assignment/{id}`         | Manager/Staff | Cập nhật         |
+| DELETE | `/api/Assignment/{id}`         | Manager       | Xóa              |
 
 ## 🔐 Authentication & Authorization
 
 ### Roles
+
 - **Manager**: Toàn quyền CRUD tất cả resources
 - **Staff**: Xem lịch của mình, cập nhật trạng thái ca
 - **Customer**: Không có quyền truy cập
 
 ### JWT Configuration
+
 ```json
 {
   "Jwt": {
@@ -174,6 +190,7 @@ WorkforceService
 ## 💡 Ví Dụ Sử Dụng
 
 ### 1. Setup Ca Làm Việc (1 lần duy nhất)
+
 ```http
 POST /api/Shift
 {
@@ -184,6 +201,7 @@ POST /api/Shift
 ```
 
 ### 2. Phân Công Lịch Hàng Loạt
+
 ```http
 POST /api/Assignment/bulk
 {
@@ -197,6 +215,7 @@ POST /api/Assignment/bulk
 ```
 
 ### 3. Nhân Viên Xem Lịch
+
 ```http
 GET /api/Workday/staff/{staffId}/schedule
   ?startDate=2024-11-01
@@ -205,6 +224,7 @@ Authorization: Bearer {token}
 ```
 
 ### 4. Cập Nhật Trạng Thái
+
 ```http
 PUT /api/Assignment/{id}
 {
@@ -226,24 +246,28 @@ PUT /api/Assignment/{id}
 ## 🚀 Cách Chạy
 
 ### 1. Đảm bảo SQL Server đang chạy
+
 ```powershell
 # Port: 1444
 # Database: WorkforceDb
 ```
 
 ### 2. Chạy UserService trước
+
 ```powershell
 cd d:\EV_Station_Rental_System\EV_StationRentalSystem_UserService
 dotnet run --project EV_StationRentalSystem.API
 ```
 
 ### 3. Chạy WorkforceService
+
 ```powershell
 cd d:\EV_Station_Rental_System\EV_StationRentalSystem_WorkforceService
 dotnet run --project EV_StationRentalSystem.API
 ```
 
 ### 4. Truy cập Swagger
+
 ```
 https://localhost:7004/swagger
 ```
@@ -291,6 +315,7 @@ https://localhost:7004/swagger
 ## 🎉 Kết Quả
 
 Hệ thống WorkforceService đã sẵn sàng để:
+
 - ✅ Quản lý ca làm việc
 - ✅ Quản lý lịch làm việc nhân viên
 - ✅ Phân công công việc

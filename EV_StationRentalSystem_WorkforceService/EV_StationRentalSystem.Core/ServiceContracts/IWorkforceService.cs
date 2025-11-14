@@ -15,8 +15,8 @@ namespace EV_StationRentalSystem.Core.ServiceContracts
         Task<bool> DeleteShiftAsync(Guid shiftId);
 
         // Workday Management
-        Task<WorkdayDTO?> GetWorkdayByIdAsync(Guid workdayId, string? authToken = null);
-        Task<List<WorkdayDTO>> GetWorkdaysByFilterAsync(WorkdayFilterRequest filter, string? authToken = null);
+        Task<WorkdayDTO?> GetWorkdayByIdAsync(Guid workdayId, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null);
+        Task<List<WorkdayDTO>> GetWorkdaysByFilterAsync(WorkdayFilterRequest filter, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null);
         Task<WorkdayDTO> CreateWorkdayAsync(CreateWorkdayRequest request);
         Task<WorkdayDTO?> UpdateWorkdayAsync(Guid workdayId, UpdateWorkdayRequest request);
         Task<bool> DeleteWorkdayAsync(Guid workdayId);
@@ -30,7 +30,7 @@ namespace EV_StationRentalSystem.Core.ServiceContracts
         Task<List<StaffAssignmentDTO>> CreateBulkAssignmentsAsync(BulkAssignmentRequest request);
 
         // Special Queries
-        Task<List<WorkdayDTO>> GetStaffScheduleAsync(Guid staffId, DateTime startDate, DateTime endDate, string? authToken = null);
-        Task<List<WorkdayDTO>> GetBranchScheduleAsync(Guid branchId, DateTime startDate, DateTime endDate, string? authToken = null);
+        Task<List<WorkdayDTO>> GetStaffScheduleAsync(Guid staffId, DateTime startDate, DateTime endDate, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null);
+        Task<List<WorkdayDTO>> GetBranchScheduleAsync(Guid branchId, DateTime startDate, DateTime endDate, string? authToken = null, Dictionary<string, string>? gatewayHeaders = null);
     }
 }
