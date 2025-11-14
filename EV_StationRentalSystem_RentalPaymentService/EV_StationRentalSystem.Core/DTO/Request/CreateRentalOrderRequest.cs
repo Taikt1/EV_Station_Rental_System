@@ -25,7 +25,9 @@ namespace EV_StationRentalSystem.Core.DTO.Request
         [Range(0, double.MaxValue, ErrorMessage = "EstimatedCost must be greater than 0")]
         public decimal EstimatedCost { get; set; }
 
-        [Required]
-        public List<CreateRentalOrderDetailRequest> Details { get; set; } = new();
+        [Required(ErrorMessage = "VehicleId is required")]
+        public string VehicleId { get; set; } = string.Empty;
+
+        public List<CreateRentalOrderDetailRequest>? Details { get; set; }
     }
 }

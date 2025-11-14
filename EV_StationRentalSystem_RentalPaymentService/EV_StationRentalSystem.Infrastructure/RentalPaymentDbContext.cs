@@ -50,6 +50,13 @@ namespace EV_StationRentalSystem.Infrastructure
                 .WithOne(f => f.RentalOrder)
                 .HasForeignKey(f => f.RentalId);
 
+            // Rental_Order 1:N PhotoProof (để match với DB)
+            modelBuilder.Entity<RentalOrder>()
+                .HasMany<PhotoProof>()
+                .WithOne(p => p.RentalOrder)
+                .HasForeignKey(p => p.RentalOrderRentalId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             // Checkin 1:N PhotoProof
             modelBuilder.Entity<Checkin>()
                 .HasMany(c => c.PhotoProofs)
@@ -57,6 +64,9 @@ namespace EV_StationRentalSystem.Infrastructure
                 .HasForeignKey(p => p.CheckinId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+
+            modelBuilder.Entity<RentalOrderDetail>()
+                .ToTable("RentalOrderDetail");  
 
             // RentalOrder 1:N RentalOrderDetail
             modelBuilder.Entity<RentalOrder>()

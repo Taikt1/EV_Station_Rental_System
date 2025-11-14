@@ -25,8 +25,10 @@ namespace EV_StationRentalSystem.Core.Services
 
         public async Task<RentalContractResponse> GetByRentalIdAsync(Guid rentalId)
         {
-            var contract = await _contractRepo.GetByRentalIdAsync(rentalId)
-                ?? throw new KeyNotFoundException("Contract not found for this rental order");
+            var contract = await _contractRepo.GetByRentalIdAsync(rentalId);
+            
+            if (contract == null)
+                return null; 
 
             return _mapper.Map<RentalContractResponse>(contract);
         }
