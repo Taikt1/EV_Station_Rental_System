@@ -14,11 +14,16 @@ namespace EV_StationRentalSystem.Core.Services
     public class RentalOrderService : IRentalOrderService
     {
         private readonly IRentalOrderRepository _rentalOrderRepository;
+        private readonly IRentalContractRepository _contractRepository;
         private readonly IMapper _mapper;
 
-        public RentalOrderService(IRentalOrderRepository rentalOrderRepository, IMapper mapper)
+        public RentalOrderService(
+            IRentalOrderRepository rentalOrderRepository,
+            IRentalContractRepository contractRepository,
+            IMapper mapper)
         {
             _rentalOrderRepository = rentalOrderRepository;
+            _contractRepository = contractRepository;
             _mapper = mapper;
         }
 
@@ -27,18 +32,21 @@ namespace EV_StationRentalSystem.Core.Services
             // Validate and parse GUIDs
             if (!Guid.TryParse(request.RenterId, out var renterId))
                 throw new ArgumentException("Invalid RenterId format");
+            if (!Guid.TryParse(request.VehicleId, out var vehicleId))
+                throw new ArgumentException("Invalid VehicleId format");
             if (!Guid.TryParse(request.BranchStartId, out var branchStartId))
                 throw new ArgumentException("Invalid BranchStartId format");
             if (!Guid.TryParse(request.BranchEndId, out var branchEndId))
                 throw new ArgumentException("Invalid BranchEndId format");
 
             // Create new rental order entity
+            var rentalOrderId = Guid.NewGuid();
             var rentalOrder = new RentalOrder
             {
-                RentalId = Guid.NewGuid(),
+                RentalId = rentalOrderId,
                 RenterId = renterId,
                 StaffId = request.StaffId,
-                VehicleId = request.Details.Select(d => d.VehicleId).First(),
+                VehicleId = vehicleId,
                 BranchStartId = branchStartId,
                 BranchEndId = branchEndId,
                 StartTime = request.StartTime,
@@ -46,15 +54,22 @@ namespace EV_StationRentalSystem.Core.Services
                 Status = "Pending",
                 EstimatedCost = request.EstimatedCost,
                 ActualCost = null,
-                RentalOrderDetails = request.Details.Select(d => new RentalOrderDetail
+                RentalOrderDetails = new List<RentalOrderDetail>
                 {
-                    Id = Guid.NewGuid(),
-                    VehicleId = d.VehicleId,
-                    AssignedAt = DateTime.UtcNow
-                }).ToList()
+                    new RentalOrderDetail
+                    {
+                        Id = Guid.NewGuid(),
+                        RentalOrderId = rentalOrderId,  
+                        VehicleId = vehicleId,
+                        AssignedAt = DateTime.UtcNow
+                    }
+                }
             };
 
             var createdOrder = await _rentalOrderRepository.CreateAsync(rentalOrder);
+
+            // ✅ TỰ ĐỘNG TẠO HỢP ĐỒNG ĐIỆN TỬ
+            await CreateAutoContractAsync(createdOrder.RentalId);
 
             return new RentalOrderResponse
             {
@@ -71,6 +86,21 @@ namespace EV_StationRentalSystem.Core.Services
                 ActualCost = createdOrder.ActualCost,
                 CreatedAt = DateTime.UtcNow
             };
+        }
+
+        // ✅ TỰ ĐỘNG TẠO HỢP ĐỒNG KHI BOOKING THÀNH CÔNG
+        private async Task CreateAutoContractAsync(Guid rentalId)
+        {
+            var contract = new RentalContract
+            {
+                RentalId = rentalId,
+                ContractType = "Electronic",
+                ContractFile = $"contract_{rentalId}.pdf", // Template URL
+                SignedByStaff = 0,  // Chưa ký
+                SignedByRenter = 0  // Chưa ký
+            };
+
+            await _contractRepository.AddAsync(contract);
         }
 
         public async Task<List<RentalOrderResponse>> GetAllRentalOrdersAsync()

@@ -23,8 +23,8 @@ namespace EV_StationRentalSystem.API.Controllers
             _paymentService = paymentService;
         }
 
-        // POST: api/payments - Táº¡o thanh toÃ¡n
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> CreatePayment([FromBody] CreatePaymentRequest request)
         {
             if (!ModelState.IsValid)
@@ -32,7 +32,7 @@ namespace EV_StationRentalSystem.API.Controllers
                 return Ok(new 
                 { 
                     success = false, 
-                    message = "D? li?u không h?p l?", 
+                    message = "Dá»¯ liá»‡u khÃ´ng há»£p lá»‡", 
                     errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage)) 
                 });
             }
@@ -40,15 +40,16 @@ namespace EV_StationRentalSystem.API.Controllers
             try
             {
                 var result = await _paymentService.CreatePaymentAsync(request);
-                return CreatedAtAction(
-                    nameof(GetPaymentById), 
-                    new { paymentId = result.PaymentId }, 
-                    new { success = true, message = "T?o thanh toán thành công", data = result }
-                );
+                return Ok(new 
+                { 
+                    success = true, 
+                    message = "Táº¡o thanh toÃ¡n thÃ nh cÃ´ng", 
+                    data = result 
+                });
             }
             catch (Exception ex)
             {
-                return Ok(new { success = false, message = "T?o thanh toán th?t b?i", error = ex.Message });
+                return Ok(new { success = false, message = "Táº¡o thanh toÃ¡n tháº¥t báº¡i", error = ex.Message });
             }
         }
 
@@ -97,7 +98,7 @@ namespace EV_StationRentalSystem.API.Controllers
             }
             catch (Exception ex)
             {
-                return Ok(new { success = false, message = "Không th? l?y danh sách thanh toán", error = ex.Message });
+                return Ok(new { success = false, message = "Khï¿½ng th? l?y danh sï¿½ch thanh toï¿½n", error = ex.Message });
             }
         }
 
@@ -108,14 +109,14 @@ namespace EV_StationRentalSystem.API.Controllers
         {
             if (!Guid.TryParse(paymentId, out var guid))
             {
-                return Ok(new { success = false, message = "Mã thanh toán không h?p l?" });
+                return Ok(new { success = false, message = "Mï¿½ thanh toï¿½n khï¿½ng h?p l?" });
             }
 
             var result = await _paymentService.GetPaymentByIdAsync(guid);
             
             if (result == null)
             {
-                return Ok(new { success = false, message = "Không tìm th?y thanh toán" });
+                return Ok(new { success = false, message = "Khï¿½ng tï¿½m th?y thanh toï¿½n" });
             }
 
             return Ok(new { success = true, data = result });
@@ -128,7 +129,7 @@ namespace EV_StationRentalSystem.API.Controllers
         {
             if (!Guid.TryParse(rentalId, out var guid))
             {
-                return Ok(new { success = false, message = "Mã don thuê không h?p l?" });
+                return Ok(new { success = false, message = "Mï¿½ don thuï¿½ khï¿½ng h?p l?" });
             }
 
             try
@@ -145,7 +146,7 @@ namespace EV_StationRentalSystem.API.Controllers
             }
             catch (Exception ex)
             {
-                return Ok(new { success = false, message = "Không th? l?y danh sách thanh toán", error = ex.Message });
+                return Ok(new { success = false, message = "Khï¿½ng th? l?y danh sï¿½ch thanh toï¿½n", error = ex.Message });
             }
         }
 
@@ -160,7 +161,7 @@ namespace EV_StationRentalSystem.API.Controllers
         {
             if (!Guid.TryParse(renterId, out var guid))
             {
-                return Ok(new { success = false, message = "Mã ngu?i thuê không h?p l?" });
+                return Ok(new { success = false, message = "Mï¿½ ngu?i thuï¿½ khï¿½ng h?p l?" });
             }
 
             try
@@ -191,7 +192,7 @@ namespace EV_StationRentalSystem.API.Controllers
             }
             catch (Exception ex)
             {
-                return Ok(new { success = false, message = "Không th? l?y l?ch s? thanh toán", error = ex.Message });
+                return Ok(new { success = false, message = "Khï¿½ng th? l?y l?ch s? thanh toï¿½n", error = ex.Message });
             }
         }
     }

@@ -27,7 +27,7 @@
                     "Port": 7105
                 }
             ],
-            "UpstreamPathTemplate": "/gateway/{everything}",
+            "UpstreamPathTemplate": "/userGateway/{everything}",
             "UpstreamHttpMethod": [
                 "GET",
                 "POST",
@@ -81,27 +81,27 @@
                 "AuthenticationProviderKey": "Bearer"
             }
         },
-        {
-            "DownstreamPathTemplate": "/api/{everything}",
-            "DownstreamScheme": "https",
-            "DownstreamHostAndPorts": [
-                {
-                    "Host": "localhost",
-                    "Port": 7160
-                }
-            ],
-            "UpstreamPathTemplate": "/api/workforce/{everything}",
-            "UpstreamHttpMethod": [
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE",
-                "OPTIONS"
-            ],
-            "AuthenticationOptions": {
-                "AuthenticationProviderKey": "Bearer"
-            }
+      {
+        "DownstreamPathTemplate": "/Workforce/{everything}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 7160
+          }
+        ],
+        "UpstreamPathTemplate": "/workforcegateway/{everything}",
+        "UpstreamHttpMethod": [
+          "GET",
+          "POST",
+          "PUT",
+          "DELETE",
+          "OPTIONS"
+        ],
+        "AuthenticationOptions": {
+          "AuthenticationProviderKey": "Bearer"
         }
+      }
     ],
     "GlobalConfiguration": {
         "BaseUrl": "https://localhost:7000"

@@ -53,23 +53,22 @@ namespace EV_StationRentalSystem.Core.Services
                 
                 // Chi phí
                 TotalSpent = payments.Where(p => p.Status == "Paid").Sum(p => p.Amount),
-                AverageSpentPerRental = rentals.Count > 0 
+                AverageSpentPerRental = rentals.Where(r => r.ActualCost.HasValue).Any()
                     ? rentals.Where(r => r.ActualCost.HasValue).Average(r => r.ActualCost ?? 0) 
                     : 0,
                 TotalPenalties = 0, // TODO: Calculate from PenaltyRecords if needed
                 
                 // Đánh giá
                 TotalFeedbacks = feedbacks.Count,
-                AverageRating = feedbacks.Count > 0 ? feedbacks.Average(f => f.Score) : 0,
+                AverageRating = feedbacks.Any() ? feedbacks.Average(f => f.Score) : 0,
                 
                 // Thời gian thuê
                 TotalRentalHours = rentals
                     .Where(r => r.EndTime.HasValue)
                     .Sum(r => (r.EndTime!.Value - r.StartTime).TotalHours),
-                AverageRentalHours = rentals
-                    .Where(r => r.EndTime.HasValue)
-                    .DefaultIfEmpty()
-                    .Average(r => r != null && r.EndTime.HasValue ? (r.EndTime.Value - r.StartTime).TotalHours : 0),
+                AverageRentalHours = rentals.Where(r => r.EndTime.HasValue).Any()
+                    ? rentals.Where(r => r.EndTime.HasValue).Average(r => (r.EndTime!.Value - r.StartTime).TotalHours)
+                    : 0,
             };
 
             // Phân tích theo ngày trong tuần

@@ -28,6 +28,7 @@ namespace EV_StationRentalSystem.Infrastructure.Repositories
         public async Task<RentalOrder?> GetByIdAsync(Guid rentalId)
         {
             return await _context.RentalOrders
+                .Include(r => r.RentalOrderDetails)
                 .Include(r => r.Payments)
                 .Include(r => r.FeedbackRatings)
                 .Include(r => r.PenaltyRecords)
@@ -85,6 +86,20 @@ namespace EV_StationRentalSystem.Infrastructure.Repositories
             return await _context.RentalOrderDetails
                 .Where(x => x.RentalOrderId == orderId)
                 .ToListAsync();
+        }
+
+        public async Task<RentalOrderDetail?> GetOrderDetailByIdAsync(Guid orderDetailId)
+        {
+            return await _context.RentalOrderDetails
+                .FirstOrDefaultAsync(x => x.Id == orderDetailId);
+        }
+
+        public async Task<RentalOrder?> GetRentalOrderByDetailIdAsync(Guid orderDetailId)
+        {
+            return await _context.RentalOrders
+                .Include(r => r.RentalOrderDetails)
+                .FirstOrDefaultAsync(r => r.RentalOrderDetails != null && 
+                                         r.RentalOrderDetails.Any(d => d.Id == orderDetailId));
         }
 
     }

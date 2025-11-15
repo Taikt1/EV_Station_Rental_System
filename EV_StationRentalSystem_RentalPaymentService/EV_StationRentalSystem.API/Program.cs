@@ -31,7 +31,7 @@ namespace EV_StationRentalSystem.API
             builder.Services.AddCors(options => {
                 options.AddDefaultPolicy(policy =>
                 {
-                    policy.WithOrigins()
+                    policy.AllowAnyOrigin() 
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });

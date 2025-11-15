@@ -19,8 +19,36 @@ namespace EV_StationRentalSystem.APIRentalPayment.Controllers
         [HttpGet("by-rental/{rentalId}")]
         public async Task<IActionResult> GetByRentalId(Guid rentalId)
         {
-            var result = await _service.GetByRentalIdAsync(rentalId);
-            return Ok(result);
+            try
+            {
+                var result = await _service.GetByRentalIdAsync(rentalId);
+                
+                if (result == null)
+                {
+                    return Ok(new 
+                    { 
+                        success = false, 
+                        message = "Chưa có hợp đồng cho đơn thuê này",
+                        data = (object)null 
+                    });
+                }
+                
+                return Ok(new 
+                { 
+                    success = true, 
+                    message = "Lấy hợp đồng thành công",
+                    data = result 
+                });
+            }
+            catch (Exception ex)
+            {
+                return Ok(new 
+                { 
+                    success = false, 
+                    message = "Không thể lấy hợp đồng",
+                    error = ex.Message 
+                });
+            }
         }
 
         [HttpGet("search")]

@@ -1,0 +1,200 @@
+### WorkforceService API Testing
+@baseUrl = https://localhost:7004
+@token = YOUR_JWT_TOKEN_HERE
+
+###############################################
+# SHIFT MANAGEMENT
+###############################################
+
+### 1. Lấy tất cả ca làm việc
+GET {{baseUrl}}/api/Shift
+Content-Type: application/json
+
+### 2. Lấy thông tin ca làm việc theo ID
+GET {{baseUrl}}/api/Shift/{{shiftId}}
+Content-Type: application/json
+
+### 3. Tạo ca làm việc mới (Manager only)
+POST {{baseUrl}}/api/Shift
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "shiftName": "Ca Sáng",
+  "startTime": "08:00:00",
+  "endTime": "12:00:00"
+}
+
+### 4. Tạo ca chiều
+POST {{baseUrl}}/api/Shift
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "shiftName": "Ca Chiều",
+  "startTime": "13:00:00",
+  "endTime": "17:00:00"
+}
+
+### 5. Tạo ca tối
+POST {{baseUrl}}/api/Shift
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "shiftName": "Ca Tối",
+  "startTime": "18:00:00",
+  "endTime": "22:00:00"
+}
+
+### 6. Cập nhật ca làm việc (Manager only)
+PUT {{baseUrl}}/api/Shift/{{shiftId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "shiftName": "Ca Sáng (Updated)",
+  "startTime": "07:30:00",
+  "endTime": "11:30:00"
+}
+
+### 7. Xóa ca làm việc (Manager only)
+DELETE {{baseUrl}}/api/Shift/{{shiftId}}
+Authorization: Bearer {{token}}
+
+###############################################
+# WORKDAY MANAGEMENT
+###############################################
+
+### 8. Lấy danh sách workday (có filter)
+GET {{baseUrl}}/api/Workday?staffId={{staffId}}&startDate=2024-01-01&endDate=2024-12-31&pageNumber=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### 9. Lấy workday theo ID
+GET {{baseUrl}}/api/Workday/{{workdayId}}
+Authorization: Bearer {{token}}
+
+### 10. Tạo workday mới (Manager only)
+POST {{baseUrl}}/api/Workday
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "staffId": "00000000-0000-0000-0000-000000000001",
+  "branchId": "00000000-0000-0000-0000-000000000001",
+  "date": "2024-11-05"
+}
+
+### 11. Cập nhật workday (Manager only)
+PUT {{baseUrl}}/api/Workday/{{workdayId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "branchId": "00000000-0000-0000-0000-000000000002"
+}
+
+### 12. Xóa workday (Manager only)
+DELETE {{baseUrl}}/api/Workday/{{workdayId}}
+Authorization: Bearer {{token}}
+
+### 13. Lấy lịch làm việc của nhân viên
+GET {{baseUrl}}/api/Workday/staff/{{staffId}}/schedule?startDate=2024-11-01&endDate=2024-11-30
+Authorization: Bearer {{token}}
+
+### 14. Lấy lịch làm việc của chi nhánh
+GET {{baseUrl}}/api/Workday/branch/{{branchId}}/schedule?startDate=2024-11-01&endDate=2024-11-30
+Authorization: Bearer {{token}}
+
+###############################################
+# ASSIGNMENT MANAGEMENT
+###############################################
+
+### 15. Lấy assignment theo ID
+GET {{baseUrl}}/api/Assignment/{{assignmentId}}
+Authorization: Bearer {{token}}
+
+### 16. Lấy các assignment của một workday
+GET {{baseUrl}}/api/Assignment/workday/{{workdayId}}
+Authorization: Bearer {{token}}
+
+### 17. Tạo assignment mới (Manager only)
+POST {{baseUrl}}/api/Assignment
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "workdayId": "{{workdayId}}",
+  "shiftId": "{{shiftId}}",
+  "task": "Kiểm tra xe, hỗ trợ khách hàng"
+}
+
+### 18. Tạo nhiều assignments cùng lúc (Manager only)
+# Phân công nhân viên làm việc từ 2024-11-05 đến 2024-11-10
+# Mỗi ngày làm ca sáng và ca chiều
+POST {{baseUrl}}/api/Assignment/bulk
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "staffId": "00000000-0000-0000-0000-000000000001",
+  "branchId": "00000000-0000-0000-0000-000000000001",
+  "startDate": "2024-11-05",
+  "endDate": "2024-11-10",
+  "shiftIds": [
+    "{{shiftId1}}",
+    "{{shiftId2}}"
+  ],
+  "task": "Phục vụ khách hàng, bảo trì trạm sạc"
+}
+
+### 19. Cập nhật assignment (Manager/Staff)
+PUT {{baseUrl}}/api/Assignment/{{assignmentId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "status": "Completed",
+  "task": "Đã hoàn thành nhiệm vụ"
+}
+
+### 20. Cập nhật trạng thái vắng mặt
+PUT {{baseUrl}}/api/Assignment/{{assignmentId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "status": "Absent"
+}
+
+### 21. Xóa assignment (Manager only)
+DELETE {{baseUrl}}/api/Assignment/{{assignmentId}}
+Authorization: Bearer {{token}}
+
+###############################################
+# WORKFLOW EXAMPLES
+###############################################
+
+### WORKFLOW 1: Tạo lịch làm việc cho nhân viên mới
+# Bước 1: Tạo các ca làm việc (nếu chưa có)
+# Bước 2: Tạo workday cho nhân viên trong tuần
+# Bước 3: Phân công các ca làm việc bằng bulk assignment
+
+### WORKFLOW 2: Xem lịch làm việc cá nhân
+# Staff có thể xem lịch làm việc của mình
+GET {{baseUrl}}/api/Workday/staff/YOUR_STAFF_ID/schedule?startDate=2024-11-01&endDate=2024-11-30
+Authorization: Bearer {{token}}
+
+### WORKFLOW 3: Manager xem lịch làm việc toàn chi nhánh
+GET {{baseUrl}}/api/Workday/branch/{{branchId}}/schedule?startDate=2024-11-01&endDate=2024-11-30
+Authorization: Bearer {{token}}
+
+### WORKFLOW 4: Cập nhật trạng thái ca làm việc
+# Staff có thể đánh dấu ca đã hoàn thành
+PUT {{baseUrl}}/api/Assignment/{{assignmentId}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "status": "Completed"
+}

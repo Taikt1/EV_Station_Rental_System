@@ -102,6 +102,106 @@
   },
   {
     "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
+    "Method": "AdminUpdateUser",
+    "RelativePath": "api/User/admin/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "EV_StationRentalSystem.Core.DTO.AdminUpdateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/User/admin/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "EV_StationRentalSystem.Core.DTO.DeleteUserRequestDTO",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
+    "Method": "LockUser",
+    "RelativePath": "api/User/admin/{userId}/lock",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "EV_StationRentalSystem.Core.DTO.LockUnlockRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
+    "Method": "ChangeUserRole",
+    "RelativePath": "api/User/admin/{userId}/role",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "EV_StationRentalSystem.Core.DTO.ChangeRoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
+    "Method": "UnlockUser",
+    "RelativePath": "api/User/admin/{userId}/unlock",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EV_StationRentalSystem.API.Controllers.UserController",
     "Method": "UploadDocument",
     "RelativePath": "api/User/documents",
     "HttpMethod": "POST",

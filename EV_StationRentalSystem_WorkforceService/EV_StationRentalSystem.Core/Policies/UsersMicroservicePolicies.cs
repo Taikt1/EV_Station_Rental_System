@@ -22,9 +22,9 @@ public class UsersMicroservicePolicies : IUsersMicroservicePolicies
 
   public IAsyncPolicy<HttpResponseMessage> GetCombinedPolicy()
   {
-    var retryPolicy = _pollyPolicies.GetRetryPolicy(4);
-    var circuitBreakerPolicy = _pollyPolicies.GetCircuitBreakerPolicy(3, TimeSpan.FromMinutes(2));
-    var timeoutPolicy = _pollyPolicies.GetTimeoutPolicy(TimeSpan.FromSeconds(3));
+    var retryPolicy = _pollyPolicies.GetRetryPolicy(3);
+    var circuitBreakerPolicy = _pollyPolicies.GetCircuitBreakerPolicy(5, TimeSpan.FromMinutes(1));
+    var timeoutPolicy = _pollyPolicies.GetTimeoutPolicy(TimeSpan.FromSeconds(30)); // Tăng timeout lên 30 giây
 
     AsyncPolicyWrap<HttpResponseMessage> wrappedPolicy = Policy.WrapAsync(retryPolicy, circuitBreakerPolicy, timeoutPolicy);
     return wrappedPolicy;

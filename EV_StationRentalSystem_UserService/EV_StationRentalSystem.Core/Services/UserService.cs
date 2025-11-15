@@ -236,5 +236,129 @@ namespace EV_StationRentalSystem.Core.Services
             var result = await _userManager.UpdateAsync(user);
             return result.Succeeded;
         }
+
+        public async Task<UserProfileResponse?> AdminUpdateUserAsync(string userId, AdminUpdateUserRequest request)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return null;
+            }
+
+            var userProfile = await _userProfileRepository.GetByUserIdAsync(userId);
+            if (userProfile == null)
+            {
+                return null;
+            }
+
+            // Update user basic info
+            if (!string.IsNullOrEmpty(request.FullName))
+            {
+                userProfile.FullName = request.FullName;
+            }
+
+            if (request.Dob.HasValue)
+            {
+                userProfile.Dob = request.Dob.Value;
+            }
+
+            if (!string.IsNullOrEmpty(request.Address))
+            {
+                userProfile.Address = request.Address;
+            }
+
+            if (!string.IsNullOrEmpty(request.PhoneNumber))
+            {
+                user.PhoneNumber = request.PhoneNumber;
+            }
+
+            if (!string.IsNullOrEmpty(request.Status))
+            {
+                user.Status = request.Status;
+            }
+
+            // Update role if specified
+            if (!string.IsNullOrEmpty(request.Role))
+            {
+                var currentRoles = await _userManager.GetRolesAsync(user);
+                await _userManager.RemoveFromRolesAsync(user, currentRoles);
+                await _userManager.AddToRoleAsync(user, request.Role);
+            }
+
+            // Save changes
+            await _userManager.UpdateAsync(user);
+            await _userProfileRepository.UpdateAsync(userProfile);
+
+            return await GetUserProfileAsync(userId);
+        }
+
+        public async Task<bool> ChangeUserRoleAsync(string userId, string newRole)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return false;
+            }
+
+            // Remove all current roles
+            var currentRoles = await _userManager.GetRolesAsync(user);
+            await _userManager.RemoveFromRolesAsync(user, currentRoles);
+
+            // Add new role
+            var result = await _userManager.AddToRoleAsync(user, newRole);
+            return result.Succeeded;
+        }
+
+        public async Task<bool> LockUserAsync(string userId, string? reason)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return false;
+            }
+
+            user.Status = "locked";
+            var result = await _userManager.UpdateAsync(user);
+
+            // TODO: Log reason to system log
+
+            return result.Succeeded;
+        }
+
+        public async Task<bool> UnlockUserAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return false;
+            }
+
+            user.Status = "active";
+            var result = await _userManager.UpdateAsync(user);
+            return result.Succeeded;
+        }
+
+        public async Task<bool> DeleteUserAsync(string userId, string? reason)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return false;
+            }
+
+            // TODO: Log reason to system log before deleting
+
+            // First delete user profile
+            var userProfile = await _userProfileRepository.GetByUserIdAsync(userId);
+            if (userProfile != null)
+            {
+                await _userProfileRepository.DeleteAsync(userProfile.Id);
+            }
+
+            // Then delete user
+            var result = await _userManager.DeleteAsync(user);
+
+            return result.Succeeded;
+        }
     }
 }

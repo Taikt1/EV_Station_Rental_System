@@ -29,7 +29,7 @@ namespace EV_StationRentalSystem.API.Controllers
 
                 if (currentUserId != userId && userRole != "manager" && userRole != "staff")
                 {
-                    return Forbid();
+                   return Forbid();
                 }
 
                 var profile = await _userService.GetUserProfileAsync(userId);
@@ -265,6 +265,196 @@ namespace EV_StationRentalSystem.API.Controllers
                 {
                     success = false,
                     message = $"Error verifying user: {ex.Message}",
+                    data = (object?)null
+                });
+            }
+        }
+
+        /// <summary>
+        /// Admin cập nhật thông tin user (chỉ manager)
+        /// </summary>
+        [Authorize(Roles = "manager")]
+        [HttpPut("admin/{userId}")]
+        public async Task<IActionResult> AdminUpdateUser(string userId, [FromBody] AdminUpdateUserRequest request)
+        {
+            try
+            {
+                var updatedUser = await _userService.AdminUpdateUserAsync(userId, request);
+                if (updatedUser == null)
+                {
+                    return NotFound(new
+                    {
+                        success = false,
+                        message = "User not found",
+                        data = (object?)null
+                    });
+                }
+
+                return Ok(new
+                {
+                    success = true,
+                    message = "User updated successfully",
+                    data = updatedUser
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = $"Error updating user: {ex.Message}",
+                    data = (object?)null
+                });
+            }
+        }
+
+        /// <summary>
+        /// Thay đổi role của user (chỉ manager)
+        /// </summary>
+        [Authorize(Roles = "manager")]
+        [HttpPut("admin/{userId}/role")]
+        public async Task<IActionResult> ChangeUserRole(string userId, [FromBody] ChangeRoleRequest request)
+        {
+            try
+            {
+                var success = await _userService.ChangeUserRoleAsync(userId, request.Role);
+                if (!success)
+                {
+                    return BadRequest(new
+                    {
+                        success = false,
+                        message = "Failed to change user role",
+                        data = (object?)null
+                    });
+                }
+
+                return Ok(new
+                {
+                    success = true,
+                    message = $"User role changed to {request.Role}",
+                    data = new { userId, role = request.Role }
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = $"Error changing user role: {ex.Message}",
+                    data = (object?)null
+                });
+            }
+        }
+
+        /// <summary>
+        /// Khóa user (chỉ manager)
+        /// </summary>
+        [Authorize(Roles = "manager")]
+        [HttpPut("admin/{userId}/lock")]
+        public async Task<IActionResult> LockUser(string userId, [FromBody] LockUnlockRequest? request = null)
+        {
+            try
+            {
+                var success = await _userService.LockUserAsync(userId, request?.Reason);
+                if (!success)
+                {
+                    return NotFound(new
+                    {
+                        success = false,
+                        message = "User not found",
+                        data = (object?)null
+                    });
+                }
+
+                return Ok(new
+                {
+                    success = true,
+                    message = "User locked successfully",
+                    data = new { userId, status = "locked", reason = request?.Reason }
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = $"Error locking user: {ex.Message}",
+                    data = (object?)null
+                });
+            }
+        }
+
+        /// <summary>
+        /// Mở khóa user (chỉ manager)
+        /// </summary>
+        [Authorize(Roles = "manager")]
+        [HttpPut("admin/{userId}/unlock")]
+        public async Task<IActionResult> UnlockUser(string userId)
+        {
+            try
+            {
+                var success = await _userService.UnlockUserAsync(userId);
+                if (!success)
+                {
+                    return NotFound(new
+                    {
+                        success = false,
+                        message = "User not found",
+                        data = (object?)null
+                    });
+                }
+
+                return Ok(new
+                {
+                    success = true,
+                    message = "User unlocked successfully",
+                    data = new { userId, status = "active" }
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = $"Error unlocking user: {ex.Message}",
+                    data = (object?)null
+                });
+            }
+        }
+
+        /// <summary>
+        /// Xóa user (chỉ manager)
+        /// </summary>
+        [Authorize(Roles = "manager")]
+        [HttpDelete("admin/{userId}")]
+        public async Task<IActionResult> DeleteUser(string userId, [FromBody] DeleteUserRequestDTO? request = null)
+        {
+            try
+            {
+                var success = await _userService.DeleteUserAsync(userId, request?.Reason);
+                if (!success)
+                {
+                    return NotFound(new
+                    {
+                        success = false,
+                        message = "User not found",
+                        data = (object?)null
+                    });
+                }
+
+                return Ok(new
+                {
+                    success = true,
+                    message = "User deleted successfully",
+                    data = new { userId, reason = request?.Reason }
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = $"Error deleting user: {ex.Message}",
                     data = (object?)null
                 });
             }
