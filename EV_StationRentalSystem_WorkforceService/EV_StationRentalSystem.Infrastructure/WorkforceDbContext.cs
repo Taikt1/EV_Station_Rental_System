@@ -16,6 +16,7 @@ namespace EV_StationRentalSystem.Infrastructure
         public DbSet<Shift> Shifts { get; set; }
         public DbSet<StaffAssignment> StaffAssignments { get; set; }
         public DbSet<StaffReassignment> StaffReassignments { get; set; }
+        public DbSet<UserReport> UserReports { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -50,7 +51,7 @@ namespace EV_StationRentalSystem.Infrastructure
                 .HasForeignKey(r => r.AssignmentId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-           
+
         }
     }
 }

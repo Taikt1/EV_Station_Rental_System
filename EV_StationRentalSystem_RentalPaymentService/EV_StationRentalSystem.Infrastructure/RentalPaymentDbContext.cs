@@ -66,7 +66,7 @@ namespace EV_StationRentalSystem.Infrastructure
 
 
             modelBuilder.Entity<RentalOrderDetail>()
-                .ToTable("RentalOrderDetail");  
+                .ToTable("RentalOrderDetail");
 
             // RentalOrder 1:N RentalOrderDetail
             modelBuilder.Entity<RentalOrder>()
@@ -95,6 +95,27 @@ namespace EV_StationRentalSystem.Infrastructure
                 .WithOne(p => p.Checkout)
                 .HasForeignKey(p => p.CheckoutId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+
+        //    modelBuilder.Entity<Checkout>()
+        //.Property(c => c.ExtraFee)
+        //.HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<Payment>()
+        //        .Property(p => p.Amount)
+        //        .HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<PenaltyRecord>()
+        //        .Property(pr => pr.PenaltyAmount)
+        //        .HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<RentalOrder>()
+        //        .Property(ro => ro.ActualCost)
+        //        .HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<RentalOrder>()
+        //        .Property(ro => ro.EstimatedCost)
+        //        .HasPrecision(18, 2);
         }
     }
 }

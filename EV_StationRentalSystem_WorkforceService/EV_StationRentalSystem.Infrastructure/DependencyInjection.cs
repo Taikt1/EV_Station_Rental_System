@@ -20,6 +20,7 @@ namespace EV_StationRentalSystem.Infrastructure
             services.AddScoped<IShiftRepository, ShiftRepository>();
             services.AddScoped<IWorkdayRepository, WorkdayRepository>();
             services.AddScoped<IStaffAssignmentRepository, StaffAssignmentRepository>();
+            services.AddScoped<IUserReportRepository, UserReportRepository>();
 
             return services;
         }
