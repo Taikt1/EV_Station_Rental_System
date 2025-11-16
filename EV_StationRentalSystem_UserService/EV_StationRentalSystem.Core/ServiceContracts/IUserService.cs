@@ -28,5 +28,8 @@ namespace EV_StationRentalSystem.Core.ServiceContracts
         Task<bool> LockUserAsync(string userId, string? reason);
         Task<bool> UnlockUserAsync(string userId);
         Task<bool> DeleteUserAsync(string userId, string? reason);
+
+        // Analytics support methods
+        Task<List<UserProfileResponse>> GetUsersByRoleAsync(string role);
     }
 }

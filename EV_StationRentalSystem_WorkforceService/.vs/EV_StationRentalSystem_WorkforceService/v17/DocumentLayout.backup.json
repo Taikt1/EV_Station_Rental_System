@@ -51,8 +51,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\EV_StationRentalSystem.API.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-11-16T08:37:52.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T08:37:52.204Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.API\\WorkforceAPI.http",
               "ViewState": "AgIAAIYAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-11-16T08:37:51.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T08:37:51.037Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\DTO\\UserReportDTO.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T08:35:13.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T08:35:13.53Z"
             }
           ]
         }

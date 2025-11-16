@@ -15,6 +15,7 @@ namespace EV_StationRentalSystem.Core
             services.AddScoped<IWorkforceService, WorkforceService>();
             services.AddScoped<IJwtService, JwtService>();
             services.AddScoped<IUserReportService, UserReportService>();
+            services.AddScoped<IBusinessAnalyticsService, BusinessAnalyticsService>();
 
             return services;
         }

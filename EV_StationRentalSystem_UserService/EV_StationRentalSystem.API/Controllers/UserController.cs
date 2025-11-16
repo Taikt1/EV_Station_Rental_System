@@ -17,6 +17,46 @@ namespace EV_StationRentalSystem.API.Controllers
             _userService = userService;
         }
 
+        /// <summary>
+        /// Get users by role - For analytics and reporting
+        /// Internal API for microservice-to-microservice communication
+        /// No authentication required (similar to other microservices)
+        /// </summary>
+        [HttpGet]
+        public async Task<IActionResult> GetUsersByRole([FromQuery] string role)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(role))
+                {
+                    return BadRequest(new
+                    {
+                        success = false,
+                        message = "Role parameter is required",
+                        data = (object?)null
+                    });
+                }
+
+                var users = await _userService.GetUsersByRoleAsync(role.ToLower());
+
+                return Ok(new
+                {
+                    success = true,
+                    message = $"Retrieved {users.Count} users with role '{role}'",
+                    data = users
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    success = false,
+                    message = $"Error retrieving users by role: {ex.Message}",
+                    data = (object?)null
+                });
+            }
+        }
+
         [Authorize]
         [HttpGet("profile/{userId}")]
         public async Task<IActionResult> GetProfile(string userId)

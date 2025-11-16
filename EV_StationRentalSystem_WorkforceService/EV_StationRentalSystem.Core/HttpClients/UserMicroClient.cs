@@ -294,6 +294,52 @@ namespace EV_StationRentalSystem.Core.HttpClients
             }
         }
 
+        /// <summary>
+        /// Get users by role for analytics
+        /// </summary>
+        public async Task<List<UserDataDTO>> GetUsersByRoleAsync(
+            string role,
+            string? authToken = null,
+            Dictionary<string, string>? gatewayHeaders = null)
+        {
+            try
+            {
+                _httpClient.DefaultRequestHeaders.Clear();
+
+                if (!string.IsNullOrEmpty(authToken))
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization =
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", authToken);
+                }
+
+                if (gatewayHeaders != null)
+                {
+                    foreach (var header in gatewayHeaders)
+                    {
+                        _httpClient.DefaultRequestHeaders.TryAddWithoutValidation(header.Key, header.Value);
+                    }
+                }
+
+                _logger?.LogInformation("Fetching users with role: {Role}", role);
+
+                var response = await _httpClient.GetAsync($"/api/User?role={role}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    _logger?.LogWarning("Failed to fetch users by role {Role}: {StatusCode}", role, response.StatusCode);
+                    return new List<UserDataDTO>();
+                }
+
+                var result = await response.Content.ReadFromJsonAsync<ApiResponse<List<UserDataDTO>>>();
+                return result?.Data ?? new List<UserDataDTO>();
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Error fetching users by role {Role}", role);
+                return new List<UserDataDTO>();
+            }
+        }
+
         // Helper class để parse response từ UserService
         private class ApiResponse<T>
         {

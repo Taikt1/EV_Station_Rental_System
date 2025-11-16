@@ -360,5 +360,35 @@ namespace EV_StationRentalSystem.Core.Services
 
             return result.Succeeded;
         }
+
+        public async Task<List<UserProfileResponse>> GetUsersByRoleAsync(string role)
+        {
+            // Get all users in the specified role
+            var usersInRole = await _userManager.GetUsersInRoleAsync(role);
+
+            var userProfileResponses = new List<UserProfileResponse>();
+
+            foreach (var user in usersInRole)
+            {
+                var userProfile = await _userProfileRepository.GetByUserIdAsync(user.Id);
+
+                userProfileResponses.Add(new UserProfileResponse
+                {
+                    UserId = user.Id,
+                    Email = user.Email ?? string.Empty,
+                    UserName = user.UserName ?? string.Empty,
+                    FullName = userProfile?.FullName ?? string.Empty,
+                    Dob = userProfile?.Dob,
+                    Address = userProfile?.Address ?? string.Empty,
+                    AvatarUrl = userProfile?.AvatarUrl ?? string.Empty,
+                    CCCDUrl = userProfile?.CCCDUrl ?? string.Empty,
+                    PhoneNumber = user.PhoneNumber ?? string.Empty,
+                    Status = user.Status ?? "Active",
+                    Role = role
+                });
+            }
+
+            return userProfileResponses;
+        }
     }
 }
