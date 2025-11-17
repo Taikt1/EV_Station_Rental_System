@@ -10,6 +10,7 @@ namespace EV_StationRentalSystem.Core.ServiceContracts
     {
         Task<PaymentResponse> CreatePaymentAsync(CreatePaymentRequest request);
         Task<PaymentResponse?> GetPaymentByIdAsync(Guid paymentId);
+        Task<PaymentResponse?> GetPaymentByTransactionCodeAsync(string transactionCode);
         Task<List<PaymentResponse>> GetAllPaymentsAsync();
         Task<List<PaymentResponse>> GetPaymentsByRentalIdAsync(Guid rentalId);
         Task<List<PaymentResponse>> GetPaymentsByRenterIdAsync(Guid renterId);
