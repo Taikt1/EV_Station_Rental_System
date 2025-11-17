@@ -1,6 +1,8 @@
 
 using EV_StationRentalSystem.API.Middleware;
 using EV_StationRentalSystem.Core;
+using EV_StationRentalSystem.Core.Entities;
+using EV_StationRentalSystem.Core.Helpers;
 using EV_StationRentalSystem.Core.HttpClients;
 using EV_StationRentalSystem.Core.Mappers;
 using EV_StationRentalSystem.Core.Policies;
@@ -26,6 +28,10 @@ namespace EV_StationRentalSystem.API
 
             builder.Services.AddAutoMapper(typeof(RentalPaymentMappingProfile).Assembly);
 
+            // Configure VNPAY
+            builder.Services.Configure<VNPAY>(builder.Configuration.GetSection("VNPAY"));
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddScoped<Utils>();
 
             //Cors
             builder.Services.AddCors(options => {

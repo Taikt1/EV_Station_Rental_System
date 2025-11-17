@@ -26,9 +26,19 @@ namespace EV_StationRentalSystem.Core.Services
                 throw new ArgumentException("Invalid RentalId format");
 
             string paymentStatus = "Pending";
-            if (request.TransactionRef != null && request.TransactionRef.Contains("DEPOSIT"))
+            if (request.TransactionRef != null)
             {
-                paymentStatus = "Paid"; 
+                if (request.TransactionRef.Contains("DEPOSIT") || 
+                    request.TransactionRef.Contains("FINAL_PAID") ||
+                    request.TransactionRef.Contains("FINAL_PAYMENT_VNPAY") ||
+                    request.TransactionRef.Contains("DEPOSIT_VNPAY"))
+                {
+                    paymentStatus = "Paid"; 
+                }
+                else if (request.TransactionRef.Contains("REFUND_COMPLETED"))
+                {
+                    paymentStatus = "Refunded";
+                }
             }
 
             var payment = new Payment
@@ -75,6 +85,25 @@ namespace EV_StationRentalSystem.Core.Services
         public async Task<PaymentResponse?> GetPaymentByIdAsync(Guid paymentId)
         {
             var payment = await _paymentRepository.GetByIdAsync(paymentId);
+            
+            if (payment == null)
+                return null;
+
+            return new PaymentResponse
+            {
+                PaymentId = payment.PaymentId.ToString(),
+                RentalId = payment.RentalId.ToString(),
+                PaymentMethod = payment.PaymentMethod ?? string.Empty,
+                Amount = payment.Amount,
+                PaymentTime = payment.PaymentTime,
+                Status = payment.Status ?? string.Empty,
+                TransactionRef = payment.TransactionRef
+            };
+        }
+
+        public async Task<PaymentResponse?> GetPaymentByTransactionCodeAsync(string transactionCode)
+        {
+            var payment = await _paymentRepository.GetByTransactionCodeAsync(transactionCode);
             
             if (payment == null)
                 return null;
