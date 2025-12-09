@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
 import joblib
 import os
@@ -8,6 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 MODEL_PATH = "trained_model.pkl"
 
@@ -15,7 +17,7 @@ MODEL_PATH = "trained_model.pkl"
 # TRAIN MODEL
 # -----------------------------
 def train_model_from_csv(csv_path):
-    # Đọc dữ liệu từ file csv 
+    # Đọc dữ liệu từ file csv
     print(f"📘 Training model from: {csv_path}")
     df = pd.read_csv(csv_path)
     # -------------------------
@@ -96,4 +98,4 @@ if __name__ == "__main__":
         train_model_from_csv(args.data_path)
     else:
         print("🚀 Starting Flask API server...")
-        app.run(debug=True, port=5000)
+        app.run(debug=True, host='0.0.0.0', port=5005)

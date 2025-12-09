@@ -25,26 +25,37 @@ namespace EV_StationRentalSystem.API
             builder.Services.AddInfrastructure(builder.Configuration);
             builder.Services.AddCore();
 
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddDefaultPolicy(policy =>
+            //    {
+            //        policy.WithOrigins(
+            //            "http://localhost:3000",      
+            //            "https://localhost:3000",
+            //            "http://localhost:3001",      
+            //            "https://localhost:3001"
+            //        )
+            //        .AllowAnyMethod()
+            //        .AllowAnyHeader()
+            //        .AllowCredentials();
+            //    });
+
+            //    options.AddPolicy("DevelopmentPolicy", policy =>
+            //    {
+            //        policy.AllowAnyOrigin()
+            //              .AllowAnyMethod()
+            //              .AllowAnyHeader();
+            //    });
+            //});
+
+            // Configure CORS
             builder.Services.AddCors(options =>
             {
                 options.AddDefaultPolicy(policy =>
                 {
-                    policy.WithOrigins(
-                        "http://localhost:3000",      
-                        "https://localhost:3000",
-                        "http://localhost:3001",      
-                        "https://localhost:3001"
-                    )
-                    .AllowAnyMethod()
-                    .AllowAnyHeader()
-                    .AllowCredentials();
-                });
-
-                options.AddPolicy("DevelopmentPolicy", policy =>
-                {
                     policy.AllowAnyOrigin()
-                          .AllowAnyMethod()
-                          .AllowAnyHeader();
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
                 });
             });
 

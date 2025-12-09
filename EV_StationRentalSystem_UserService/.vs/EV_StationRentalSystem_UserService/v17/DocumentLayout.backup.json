@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "EV_StationRentalSystem.API\\Controllers\\UserController.cs",
               "ToolTip": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_UserService\\EV_StationRentalSystem.API\\Controllers\\UserController.cs",
               "RelativeToolTip": "EV_StationRentalSystem.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:58:00.834Z",
               "EditorCaption": ""
@@ -123,8 +123,7 @@
               "RelativeToolTip": "EV_StationRentalSystem.Core\\Services\\UserService.cs",
               "ViewState": "AgIAAGYBAAAAAAAAAAAiwG4BAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T07:44:17.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T07:44:17.093Z"
             },
             {
               "$type": "Document",
