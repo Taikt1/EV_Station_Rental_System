@@ -32,6 +32,13 @@ namespace EV_StationRentalSystem.Infrastructure.Repositories
                 .FirstOrDefaultAsync(p => p.PaymentId == paymentId);
         }
 
+        public async Task<Payment?> GetByTransactionCodeAsync(string transactionCode)
+        {
+            return await _context.Payments
+                .Include(p => p.RentalOrder)
+                .FirstOrDefaultAsync(p => p.TransactionRef == transactionCode);
+        }
+
         public async Task<List<Payment>> GetAllAsync()
         {
             return await _context.Payments
