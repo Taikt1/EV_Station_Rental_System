@@ -1,4 +1,6 @@
 ﻿
+using EV_StationRentalSystem.Core.RepositoryContracts;
+using EV_StationRentalSystem.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +17,15 @@ namespace EV_StationRentalSystem.Infrastructure
             services.AddDbContext<RentalPaymentDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("RentalPaymentDb")));
 
+            // Register repositories
+            services.AddScoped<IRentalOrderRepository, RentalOrderRepository>();
+            services.AddScoped<IFeedbackRepository, FeedbackRepository>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+
+            services.AddScoped<IRentalContractRepository, RentalContractRepository>();
+            services.AddScoped<ICheckinRepository, CheckinRepository>();
+            services.AddScoped<ICheckoutRepository, CheckoutRepository>();
+            services.AddScoped<IPenaltyRepository, PenaltyRepository>();
 
             return services;
         }

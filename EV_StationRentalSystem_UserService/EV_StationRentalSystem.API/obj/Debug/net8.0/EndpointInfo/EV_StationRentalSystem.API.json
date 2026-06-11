@@ -67,54 +67,6 @@
         }
       }
     },
-    "/api/Test/public": {
-      "get": {
-        "tags": [
-          "Test"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Test/protected": {
-      "get": {
-        "tags": [
-          "Test"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Test/debug-headers": {
-      "get": {
-        "tags": [
-          "Test"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Test/validate-token": {
-      "get": {
-        "tags": [
-          "Test"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/User/profile": {
       "get": {
         "tags": [
@@ -127,7 +79,7 @@
         }
       }
     },
-    "/api/User/dashboard": {
+    "/api/User/info": {
       "get": {
         "tags": [
           "User"

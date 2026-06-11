@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.API", "EV_StationRentalSystem.API\EV_StationRentalSystem.API.csproj", "{114C505E-8AEA-4143-906C-A4EE4FBACE30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.APIFleet", "..\EV_StationRentalSystem_FleetService\EV_StationRentalSystem.API\EV_StationRentalSystem.APIFleet.csproj", "{E8EB44DB-A579-7844-7190-E09E7F44DBD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.APIRentalPayment", "..\EV_StationRentalSystem_RentalPaymentService\EV_StationRentalSystem.API\EV_StationRentalSystem.APIRentalPayment.csproj", "{8239AD36-4B6C-A36A-6ACD-9634BBCB2569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.APIUser", "..\EV_StationRentalSystem_UserService\EV_StationRentalSystem.API\EV_StationRentalSystem.APIUser.csproj", "{ED7D7863-E9FE-ADF5-AF02-20C6FDF5F51E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EV_StationRentalSystem.APIWorkforce", "..\EV_StationRentalSystem_WorkforceService\EV_StationRentalSystem.API\EV_StationRentalSystem.APIWorkforce.csproj", "{0448A1E3-43FB-20CE-81E1-4FD154CA3DE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{114C505E-8AEA-4143-906C-A4EE4FBACE30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114C505E-8AEA-4143-906C-A4EE4FBACE30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114C505E-8AEA-4143-906C-A4EE4FBACE30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114C505E-8AEA-4143-906C-A4EE4FBACE30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8EB44DB-A579-7844-7190-E09E7F44DBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8EB44DB-A579-7844-7190-E09E7F44DBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8EB44DB-A579-7844-7190-E09E7F44DBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8EB44DB-A579-7844-7190-E09E7F44DBD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8239AD36-4B6C-A36A-6ACD-9634BBCB2569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8239AD36-4B6C-A36A-6ACD-9634BBCB2569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8239AD36-4B6C-A36A-6ACD-9634BBCB2569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8239AD36-4B6C-A36A-6ACD-9634BBCB2569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7D7863-E9FE-ADF5-AF02-20C6FDF5F51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7D7863-E9FE-ADF5-AF02-20C6FDF5F51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7D7863-E9FE-ADF5-AF02-20C6FDF5F51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7D7863-E9FE-ADF5-AF02-20C6FDF5F51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0448A1E3-43FB-20CE-81E1-4FD154CA3DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0448A1E3-43FB-20CE-81E1-4FD154CA3DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0448A1E3-43FB-20CE-81E1-4FD154CA3DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0448A1E3-43FB-20CE-81E1-4FD154CA3DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0BDAA5B-FE95-4901-B270-1332CC572B1F}
+	EndGlobalSection
+EndGlobal

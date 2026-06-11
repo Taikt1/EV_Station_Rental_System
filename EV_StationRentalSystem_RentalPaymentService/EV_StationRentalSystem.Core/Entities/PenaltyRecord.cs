@@ -15,7 +15,7 @@ namespace EV_StationRentalSystem.Core.Entities
         public Guid RentalId { get; set; }
         public string? Reason { get; set; }
         public decimal PenaltyAmount { get; set; }
-        public int IssuedBy { get; set; } // logic ID → Staff
+        public Guid IssuedBy { get; set; } // logic ID → Staff
         public DateTime IssuedDate { get; set; } = DateTime.UtcNow;
 
         public RentalOrder RentalOrder { get; set; }

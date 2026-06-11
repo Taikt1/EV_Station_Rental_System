@@ -1041,6 +1041,19 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "Polly/7.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -1632,6 +1645,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Microsoft.IdentityModel.Tokens": "8.3.1",
+          "Polly": "7.2.4",
           "System.IdentityModel.Tokens.Jwt": "7.1.2"
         },
         "compile": {
@@ -3206,6 +3220,31 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "Polly/7.2.4": {
+      "sha512": "bw00Ck5sh6ekduDE3mnCo1ohzuad946uslCDEENu3091+6UKnBuKLo4e+yaNcCzXxOZCXWY2gV4a35+K1d4LDA==",
+      "type": "package",
+      "path": "polly/7.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "package-icon.png",
+        "polly.7.2.4.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -4168,11 +4207,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+      "projectUniqueName": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
       "projectName": "EV_StationRentalSystem.Insfrastructure",
-      "projectPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
+      "projectPath": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\EV_StationRentalSystem.Insfrastructure.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\obj\\",
+      "outputPath": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Insfrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4194,8 +4233,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj": {
-              "projectPath": "D:\\PRN231_Project\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj"
+            "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj": {
+              "projectPath": "D:\\EV_Station_Rental_System\\EV_StationRentalSystem_FleetService\\EV_StationRentalSystem.Core\\EV_StationRentalSystem.Core.csproj"
             }
           }
         }

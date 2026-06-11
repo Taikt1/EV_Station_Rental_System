@@ -1,4 +1,5 @@
-﻿
+﻿using EV_StationRentalSystem.Core.RepositoryContracts;
+using EV_StationRentalSystem.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +16,11 @@ namespace EV_StationRentalSystem.Infrastructure
             services.AddDbContext<WorkforceDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("WorkforceDB")));
 
+            // Register repositories
+            services.AddScoped<IShiftRepository, ShiftRepository>();
+            services.AddScoped<IWorkdayRepository, WorkdayRepository>();
+            services.AddScoped<IStaffAssignmentRepository, StaffAssignmentRepository>();
+            services.AddScoped<IUserReportRepository, UserReportRepository>();
 
             return services;
         }

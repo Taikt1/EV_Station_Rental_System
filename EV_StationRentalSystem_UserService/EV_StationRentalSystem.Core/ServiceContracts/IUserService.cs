@@ -10,19 +10,26 @@ namespace EV_StationRentalSystem.Core.ServiceContracts
     public interface IUserService
     {
 
-        /// <summary>
-        /// Logs in a user and returns an authentication response
-        /// </summary>
-        /// <param name="loginRequest"></param>
-        /// <returns></returns>
         Task<AuthenticationResponse?> Login(LoginRequest loginRequest);
-
-
-        /// <summary>
-        /// Registers a new user and returns an authentication response
-        /// </summary>
-        /// <param name="registerRequest"></param>
-        /// <returns></returns>
         Task<AuthenticationResponse?> Register(RegisterRequest registerRequest);
+        Task<bool> Logout();
+
+        Task<UserProfileResponse?> GetUserProfileAsync(string userId);
+
+        Task<UserProfileResponse?> UpdateProfileAsync(string userId, UpdateProfileRequest request);
+
+        Task<string> UploadDocumentAsync(string userId, UploadDocumentRequest request);
+
+        Task<bool> VerifyUserAsync(string userId, string status);
+
+        // Admin management methods
+        Task<UserProfileResponse?> AdminUpdateUserAsync(string userId, AdminUpdateUserRequest request);
+        Task<bool> ChangeUserRoleAsync(string userId, string newRole);
+        Task<bool> LockUserAsync(string userId, string? reason);
+        Task<bool> UnlockUserAsync(string userId);
+        Task<bool> DeleteUserAsync(string userId, string? reason);
+
+        // Analytics support methods
+        Task<List<UserProfileResponse>> GetUsersByRoleAsync(string role);
     }
 }

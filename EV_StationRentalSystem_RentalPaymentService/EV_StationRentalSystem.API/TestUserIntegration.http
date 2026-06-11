@@ -1,0 +1,33 @@
+### Test User Integration APIs - Simplified Version
+
+### 1. Test connection to UserService
+GET https://localhost:7015/api/UserIntegration/test-connection
+Content-Type: application/json
+
+###
+
+### 2. Get user info from UserService via RentalPaymentService
+GET https://localhost:7015/api/UserIntegration/user-info
+Content-Type: application/json
+
+###
+
+### Direct test on UserService (for comparison)
+
+### 3. Get user info directly from UserService
+GET https://localhost:7105/api/User/info
+Content-Type: application/json
+
+###
+
+### Multiple calls to test consistency
+
+### 4. Test again - RentalPaymentService calling UserService
+GET https://localhost:7015/api/UserIntegration/user-info
+Content-Type: application/json
+
+###
+
+### 5. Test again - Direct call to UserService
+GET https://localhost:7105/api/User/info
+Content-Type: application/json

@@ -139,6 +139,9 @@ namespace EV_StationRentalSystem.API
             app.UseRouting();
 
             app.UseAuthentication();
+            
+            // Add Gateway Auth Middleware to read headers from Gateway
+            app.UseGatewayAuth();
 
             app.UseAuthorization();
 

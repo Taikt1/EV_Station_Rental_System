@@ -13,6 +13,7 @@ namespace EV_StationRentalSystem.Infrastructure
         public RentalPaymentDbContext(DbContextOptions<RentalPaymentDbContext> options) : base(options) { }
 
         public DbSet<RentalOrder> RentalOrders { get; set; }
+        public DbSet<RentalOrderDetail> RentalOrderDetails { get; set; }
         public DbSet<RentalContract> RentalContracts { get; set; }
         public DbSet<Checkin> Checkins { get; set; }
         public DbSet<Checkout> Checkouts { get; set; }
@@ -49,6 +50,13 @@ namespace EV_StationRentalSystem.Infrastructure
                 .WithOne(f => f.RentalOrder)
                 .HasForeignKey(f => f.RentalId);
 
+            // Rental_Order 1:N PhotoProof (để match với DB)
+            modelBuilder.Entity<RentalOrder>()
+                .HasMany<PhotoProof>()
+                .WithOne(p => p.RentalOrder)
+                .HasForeignKey(p => p.RentalOrderRentalId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             // Checkin 1:N PhotoProof
             modelBuilder.Entity<Checkin>()
                 .HasMany(c => c.PhotoProofs)
@@ -56,6 +64,9 @@ namespace EV_StationRentalSystem.Infrastructure
                 .HasForeignKey(p => p.CheckinId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+
+            modelBuilder.Entity<RentalOrderDetail>()
+                .ToTable("RentalOrderDetail");
 
             // RentalOrder 1:N RentalOrderDetail
             modelBuilder.Entity<RentalOrder>()
@@ -84,6 +95,27 @@ namespace EV_StationRentalSystem.Infrastructure
                 .WithOne(p => p.Checkout)
                 .HasForeignKey(p => p.CheckoutId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+
+        //    modelBuilder.Entity<Checkout>()
+        //.Property(c => c.ExtraFee)
+        //.HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<Payment>()
+        //        .Property(p => p.Amount)
+        //        .HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<PenaltyRecord>()
+        //        .Property(pr => pr.PenaltyAmount)
+        //        .HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<RentalOrder>()
+        //        .Property(ro => ro.ActualCost)
+        //        .HasPrecision(18, 2);
+
+        //    modelBuilder.Entity<RentalOrder>()
+        //        .Property(ro => ro.EstimatedCost)
+        //        .HasPrecision(18, 2);
         }
     }
 }
